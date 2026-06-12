@@ -7,7 +7,7 @@ Predicting Annual Wine Production by Viticultural Region in Portugal
 Tabular data / regression
 
 ## Team Members
-- Nº 27916 | Andrea Dombe
+- Nº 27119 | Andrea Dombe
 - Nº 27916 | Dandara França
 - Nº 26298 | Fernanda Chácara
 
