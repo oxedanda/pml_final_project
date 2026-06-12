@@ -8,11 +8,11 @@ The project is currently in the proposal and setup stage. The repository structu
 
 ```text
 pml_final_project/
-├── project_proposal/   # project proposal and planning documents
+├── project_proposal/   # project proposal
 ├── data/
-│   ├── raw/            # original datasets collected from external sources
+│   ├── raw/            # original datasets collected from IVV
 │   └── processed/      # cleaned and transformed datasets for analysis
-├── notebooks/          # Jupyter and Google Colab notebooks
+├── notebooks/          # Google Colab notebooks
 ├── outputs/
 │   ├── figures/        # charts and visual outputs
 │   └── tables/         # analytical and summary tables
