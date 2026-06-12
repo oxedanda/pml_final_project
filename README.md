@@ -6,13 +6,18 @@ The project is currently in the proposal and setup stage. The repository structu
 
 ## Repository Structure
 
-- `project_proposal/` — project proposal and planning documents.
-- `data/raw/` — original raw datasets collected from external sources.
-- `data/processed/` — cleaned and transformed datasets for analysis.
-- `notebooks/` — Jupyter and Google Colab notebooks.
-- `outputs/figures/` — charts and visual outputs.
-- `outputs/tables/` — analytical and summary tables.
-- `src/` — reusable source code for data preparation and modelling.
+```text
+pml_final_project/
+├── project_proposal/   # project proposal and planning documents
+├── data/
+│   ├── raw/            # original datasets collected from external sources
+│   └── processed/      # cleaned and transformed datasets for analysis
+├── notebooks/          # Jupyter and Google Colab notebooks
+├── outputs/
+│   ├── figures/        # charts and visual outputs
+│   └── tables/         # analytical and summary tables
+└── src/                # reusable source code for data preparation and modelling
+```
 
 ## Data Source
 
@@ -20,11 +25,12 @@ The main dataset will be based on official statistics from the Instituto da Vinh
 
 ## Academic Information
 
-**Course:** Predicting Machine Learning  
-**Authors:** Nº 27916 | Andrea Dombe, Nº 27916 | Dandara França, Nº 26298 | Fernanda Chácara  
+**Course:** Practical Machine Learning  
+**Team members:** 
+- Nº 27916 | Andrea Dombe
+- Nº 27916 | Dandara França
+- Nº 26298 | Fernanda Chácara
+
 **Institution:** Instituto Superior de Agronomia — Lisbon, Portugal
 
-
-## Notes
-
-This README is intentionally brief and will be expanded as the project develops.
+*Notes: This README will be expanded as the project develops.*
