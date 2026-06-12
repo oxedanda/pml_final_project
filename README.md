@@ -26,6 +26,7 @@ The main dataset will be based on official statistics from the Instituto da Vinh
 ## Academic Information
 
 **Course:** Practical Machine Learning  
+
 **Team members:** 
 - Nº 27119 | Andrea Dombe
 - Nº 27916 | Dandara França
