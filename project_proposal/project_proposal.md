@@ -7,9 +7,9 @@ Predicting Annual Wine Production by Viticultural Region in Portugal
 Tabular data / regression
 
 ## Team Members
-Nº 27119 | Andrea Dombe  
-Nº 27916 | Dandara França  
-Nº 26298 | Fernanda Chácara  
+- Nº 27119 | Andrea Dombe  
+- Nº 27916 | Dandara França  
+- Nº 26298 | Fernanda Chácara  
 
 ## Problem Statement
 This project investigates how to predict annual wine production for Portuguese viticultural regions using historical official statistics from the Instituto da Vinha e do Vinho (IVV). This is an interesting problem because wine production is an important agricultural and economic indicator in Portugal, and it varies across regions and campaigns due to regional characteristics, changing production conditions, and year-to-year variability.
