@@ -39,6 +39,8 @@ changes.
 data/raw/                 Original IVV workbooks
 data/processed/           Clean model-ready CSV files
 notebooks/                Data cleaning, EDA, and baseline notebooks
+notebooks/04_future_forecast_simulator.ipynb
+                          Experimental 2026/27 forecast simulator
 outputs/figures/          Generated figures
 outputs/tables/           Metrics and test predictions
 project_proposal/         Submitted proposal
@@ -63,6 +65,17 @@ The script recreates:
 - `outputs/tables/test_predictions.csv`
 - `outputs/figures/model_comparison_mae.png`
 
+The separate experimental future-forecast workflow can be reproduced with:
+
+```bash
+python src/future_forecast.py
+```
+
+It creates `outputs/tables/forecast_2026_27.csv` and the associated lag-model
+validation and test tables. The notebook
+`04_future_forecast_simulator.ipynb` adds an interactive region and vineyard-area
+scenario interface. The original notebook 03 is retained unchanged in purpose.
+
 ## Data sources
 
 - [IVV wine production statistics](https://www.ivv.gov.pt/np4/163.html)
@@ -74,5 +87,6 @@ included in this repository.
 ## Colab notebooks
 
 Each principal notebook contains an “Open in Colab” badge. For the final model
-comparison, the repository script above is the authoritative reproducible
-workflow.
+comparison, the repository scripts are the authoritative reproducible workflows.
+Notebook 04 is explicitly labelled experimental and reports an empirical 90%
+error interval rather than presenting the point forecast as certain.

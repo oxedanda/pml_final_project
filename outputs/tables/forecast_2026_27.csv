@@ -1,0 +1,15 @@
+region,year_start,vineyard_area_ha,selected_model,predicted_production_hl,lower_90_hl,upper_90_hl
+Alentejo,2026,25421.93,Random forest with lags,1068766,920791,1216742
+Algarve,2026,1201.75,Random forest with lags,18255,0,166231
+Açores,2026,1334.12,Random forest with lags,10151,0,158127
+Bairrada,2026,9180.68,Random forest with lags,188368,40393,336344
+Beira Interior,2026,11360.82,Random forest with lags,219067,71091,367043
+Douro,2026,43929.72,Random forest with lags,1411028,1263052,1559003
+Dão,2026,9834.17,Random forest with lags,218304,70328,366279
+Lisboa,2026,17819.98,Random forest with lags,1166580,1018605,1314556
+Madeira,2026,645.88,Random forest with lags,28790,0,176765
+P. Setúbal,2026,7355.33,Random forest with lags,477691,329716,625667
+T. Montes,2026,4520.63,Random forest with lags,93138,0,241113
+Tejo,2026,11713.12,Random forest with lags,637021,489045,784996
+Távora-Varosa,2026,2072.41,Random forest with lags,54116,0,202092
+Verdes,2026,23272.15,Random forest with lags,1054430,906455,1202406

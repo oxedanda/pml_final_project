@@ -201,6 +201,29 @@ within each region and evaluated with the same temporal discipline. Prediction
 intervals or quantile models would communicate uncertainty more honestly than
 single point estimates.
 
+### 7.1 Experimental one-year-ahead extension
+
+After the primary comparison, an additional experimental workflow was created
+in `04_future_forecast_simulator.ipynb`. It uses the previous two campaigns,
+the mean of the previous three campaigns, the latest production change,
+vineyard area, region, and year. Every lag is shifted within region before the
+target campaign, so the target itself is never used as an input.
+
+With the same rolling-validation years, a random forest with lag features had
+the best validation MAE (52,314 hl). In one-step-ahead tests over 2023-2025, it
+obtained MAE 59,026 hl versus 69,403 hl for previous-campaign persistence. This
+test differs from the primary fixed-origin three-year holdout because each
+campaign may use the immediately preceding observed campaign. The two results
+therefore answer different forecasting questions and should not be compared as
+if their information sets were identical.
+
+The selected lag model was refitted through 2025 to generate experimental
+2026/27 forecasts. The simulator defaults to the latest observed vineyard area
+and allows a user-supplied area scenario. Reported lower and upper values use
+the 90th percentile of absolute rolling-validation errors (147,976 hl) as a
+symmetric empirical error band. This is a practical uncertainty indication,
+not a formal probabilistic confidence interval.
+
 Deployment was considered optional and was not prioritized because a reliable
 predictive advantage over the persistence baseline has not yet been established.
 
@@ -208,11 +231,14 @@ predictive advantage over the persistence baseline has not yet been established.
 
 This project built a reproducible, leakage-resistant comparison for annual wine
 production across Portuguese viticultural regions. Linear regression was the
-best ML candidate during rolling validation, but the untouched 2023-2025 test
-period showed that persistence was more accurate. The main contribution is thus
+best ML candidate in the primary fixed-origin comparison, but persistence was
+more accurate on its untouched 2023-2025 test period. A separate one-step-ahead
+extension showed that lagged production can improve on persistence under a
+different, operationally later information set. The main contribution is thus
 both a modelling pipeline and an evidence-based diagnosis: region and vineyard
-area explain structural differences, while credible year-ahead prediction
-requires additional time-varying information.
+area explain structural differences, while year-ahead prediction benefits from
+recent time-varying information and must state exactly what is known at forecast
+time.
 
 ## 9. Contributions
 
