@@ -1,37 +1,84 @@
 # Predicting Annual Wine Production by Viticultural Region in Portugal
 
-This repository contains the initial materials for a machine learning project focused on predicting annual wine production across Portuguese viticultural regions.
+Final project for Practical Machine Learning, Master's in Green Data Science,
+Instituto Superior de Agronomia, Universidade de Lisboa (2025/2026).
 
-The project is currently in the proposal and setup stage. The repository structure has been prepared to support data collection, exploratory analysis, modelling, and reporting.
+The project studies annual wine-production forecasting for 14 Portuguese
+viticultural regions using official Instituto da Vinha e do Vinho (IVV) data.
+It compares transparent temporal baselines with linear, regularized linear, and
+random-forest regression models.
 
-## Repository Structure
+## Team
+
+- No. 27119 - Andrea Dombe
+- No. 27916 - Dandara França
+- No. 26298 - Fernanda Chácara
+
+## Main findings
+
+Model selection used rolling-origin validation over 2018-2022. The years
+2023-2025 were kept as a final chronological test set. Linear regression was the
+best machine-learning candidate during validation, but a simple persistence
+baseline performed better on the untouched test period:
+
+| Model | Test MAE (hl) | Test RMSE (hl) | Test R² |
+|---|---:|---:|---:|
+| Persistence: last regional value | 55,139 | 98,771 | 0.961 |
+| Historical regional mean | 70,377 | 117,842 | 0.945 |
+| Linear regression | 78,982 | 115,420 | 0.947 |
+| Random forest, min. leaf 1 | 102,482 | 237,583 | 0.777 |
+
+The result is intentionally reported without claiming that the ML model beats
+the baseline. Region and vineyard area explain much of the cross-sectional
+variation, but the available predictors do not consistently capture annual
+changes.
+
+## Repository structure
 
 ```text
-pml_final_project/
-├── project_proposal/   # project proposal
-├── data/
-│   ├── raw/            # original datasets collected from IVV
-│   └── processed/      # cleaned and transformed datasets for analysis
-├── notebooks/          # Google Colab notebooks
-├── outputs/
-│   ├── figures/        # charts and visual outputs
-│   └── tables/         # analytical and summary tables
-└── src/                # reusable source code for data preparation and modelling
+data/raw/                 Original IVV workbooks
+data/processed/           Clean model-ready CSV files
+notebooks/                Data cleaning, EDA, and baseline notebooks
+outputs/figures/          Generated figures
+outputs/tables/           Metrics and test predictions
+project_proposal/         Submitted proposal
+report/final_report.md    Final self-contained report
+src/evaluate_models.py    Reproducible temporal evaluation
+requirements.txt          Python dependencies
 ```
 
-## Data Source
+## Reproduce the final evaluation
 
-The main dataset will be based on official statistics from the Instituto da Vinha e do Vinho (IVV), including historical wine production data by viticultural region.
+```bash
+python -m venv .venv
+# Windows: .venv\Scripts\activate
+# macOS/Linux: source .venv/bin/activate
+pip install -r requirements.txt
+python src/evaluate_models.py
+```
 
-## Academic Information
+The script recreates:
 
-**Course:** Practical Machine Learning  
+- `outputs/tables/model_comparison.csv`
+- `outputs/tables/test_predictions.csv`
+- `outputs/figures/model_comparison_mae.png`
 
-**Team members:** 
-- Nº 27119 | Andrea Dombe
-- Nº 27916 | Dandara França
-- Nº 26298 | Fernanda Chácara
+## Data sources
 
-**Institution:** Instituto Superior de Agronomia — Lisbon, Portugal
+- [IVV wine production statistics](https://www.ivv.gov.pt/np4/163.html)
+- [IVV vineyard-area statistics](https://www.ivv.gov.pt/np4/10586.html)
 
-*Notes: This README will be expanded as the project develops.*
+The original and processed datasets required for the submitted analysis are
+included in this repository.
+
+## Colab notebooks
+
+Each principal notebook contains an “Open in Colab” badge. For the final model
+comparison, the repository script above is the authoritative reproducible
+workflow.
+
+## Academic integrity and use of AI
+
+AI-assisted code sections contain a comment beginning with `prompt`, followed
+by a short record of the requested change and human modifications. Team members
+must verify that any other AI-assisted sections are documented before submission.
