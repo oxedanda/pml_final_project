@@ -1,0 +1,10 @@
+,dtype
+region,object
+campaign_year,object
+year_start,int64
+total_production_hl,int64
+dop_production_hl,int64
+igp_production_hl,int64
+year_variety_production_hl,int64
+non_certified_production_hl,int64
+vineyard_area_ha,float64
