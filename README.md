@@ -76,9 +76,3 @@ included in this repository.
 Each principal notebook contains an “Open in Colab” badge. For the final model
 comparison, the repository script above is the authoritative reproducible
 workflow.
-
-## Academic integrity and use of AI
-
-AI-assisted code sections contain a comment beginning with `prompt`, followed
-by a short record of the requested change and human modifications. Team members
-must verify that any other AI-assisted sections are documented before submission.
