@@ -232,20 +232,24 @@ predictive advantage over the persistence baseline has not yet been established.
 
 ### 7.2 Hugging Face Implementation
 
-The experimental one-year-ahead forecasting workflow was deployed as an interactive 
-application on Hugging Face Spaces. The app implements the full methodology described 
-in section 7.1, including rolling-origin validation, model selection, and region-specific prediction intervals. The application is built with Python and uses the same data 
-processig pipeline, feature engineering, and candidate models (persistence, linear
-regression, Ridge and random forest) as the experimental notebook. 
-Users can explore forecasts for the 2026/27 campaign and adjust vineyard area
-scenarios through the interface.
+The experimental one-year-ahead forecasting workflow was also implemented as an
+interactive application. The app is available in `src/app.py` and was prepared
+for deployment on Hugging Face Spaces. It implements the methodology described
+in section 7.1, including rolling-origin validation, model selection, and an
+experimental 2026/27 forecast. The application is built with Python and uses the
+same data-processing pipeline, feature engineering, and candidate models
+(persistence, linear regression, Ridge, and random forest) as the experimental
+notebook. Users can explore forecasts for the 2026/27 campaign and adjust
+vineyard area scenarios through the interface.
 
 ### 7.3 Region-Specific Intervals in the App
 
-A key enhancement in the Hugging Face implementation is the calculation of region-specific
-90% emperical prediction intervals. These intervals are derived from the absolute erros 
-observed during rolling-origin validation (2018-2022) for each region. The lower
-bound calculation incorporates three protective constraints:
+A key enhancement in the interactive implementation is the clear presentation of
+empirical 90% prediction bands. These intervals are derived from the absolute
+errors observed during rolling-origin validation (2018-2022). The local app and
+notebook present these bands as practical uncertainty indicators, not as formal
+probabilistic confidence intervals. Deployed variants can additionally use
+region-specific safeguards for the lower bound, such as:
 
 1. **Non-negativity**: The lower bound cannot be negative (`max(0, ...)`).
 2. **Historical minimum**: It cannot fall below 30% of the region's historical minimum
@@ -253,11 +257,10 @@ production, ensuring forecasts respect past realities.
 3. **Reasonable floor**: If the forecast is too low, a minimum reasonable value (e.g., 5% of
 the forecast) is applied.
 
-For regions with insufficient validation data, the app falls back to a global error estimate
-with a correction factor. This approach yields intervals that are realistic and region-aware,
-addressing the limitation of a single global uncertainty band. The intervals are empirical and
-based on observed errors, serving as a practical uncertainty indication rather than a formal 
-probabilistic confidence interval.
+The intervals are empirical and based on observed errors, serving as a practical
+uncertainty indication rather than a formal probabilistic confidence interval.
+Vineyard-area changes in the interface are scenario assumptions and must not be
+interpreted as causal effects.
 
 ## 8. Conclusions
 

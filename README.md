@@ -47,6 +47,7 @@ outputs/tables/           Metrics and test predictions
 project_proposal/         Submitted proposal
 report/final_report.md    Final self-contained report
 src/evaluate_models.py    Reproducible temporal evaluation
+src/app.py                Optional interactive Gradio forecast app
 requirements.txt          Python dependencies
 ```
 
@@ -79,6 +80,17 @@ fixed 2023-2025 baseline evaluation and then presents the experimental
 one-step-ahead 2026/27 forecast simulator with an interactive region and
 vineyard-area scenario interface.
 
+The optional local Gradio app can be launched with:
+
+```bash
+python src/app.py
+```
+
+It uses the same `forecast_2026()` function as the notebook and shows the
+predicted 2026/27 production by region. Vineyard area is treated only as a
+scenario input, and the 90% band is an empirical validation-error band rather
+than a formal confidence interval.
+
 ## Data sources
 
 - [IVV wine production statistics](https://www.ivv.gov.pt/np4/163.html)
@@ -91,5 +103,6 @@ included in this repository.
 
 Each principal notebook contains an “Open in Colab” badge. For the final model
 comparison, the repository scripts are the authoritative reproducible workflows.
-Notebook 04 is explicitly labelled experimental and reports an empirical 90%
-error interval rather than presenting the point forecast as certain.
+Notebook 03 contains the consolidated forecast simulator and reports an
+empirical 90% error interval rather than presenting the point forecast as
+certain.
