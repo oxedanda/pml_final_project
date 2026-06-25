@@ -227,6 +227,16 @@ not a formal probabilistic confidence interval.
 Deployment was considered optional and was not prioritized because a reliable
 predictive advantage over the persistence baseline has not yet been established.
 
+### 7.2 Hugging Face Implementation
+
+The experimental one-year-ahead forecasting workflow was deployed as an interactive 
+application on Hugging Face Spaces. The app implements the full methodology described 
+in section 7.1, including rolling-origin validation, model selection, and region-specific prediction intervals. The application is built with Python and uses the same data 
+processig pipeline, feature engineering, and candidate models (persistence, linear
+regression, Ridge and random forest) as the experimental notebook. 
+Users can explore forecasts for the 2026/27 campaign and adjust vineyard area
+scenarios through the interface.
+
 ## 8. Conclusions
 
 This project built a reproducible, leakage-resistant comparison for annual wine
