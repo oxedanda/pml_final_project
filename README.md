@@ -38,9 +38,10 @@ changes.
 ```text
 data/raw/                 Original IVV workbooks
 data/processed/           Clean model-ready CSV files
-notebooks/                Data cleaning, EDA, and baseline notebooks
-notebooks/04_future_forecast_simulator.ipynb
-                          Experimental 2026/27 forecast simulator
+notebooks/                Data cleaning, EDA, and modelling notebooks
+notebooks/03_forecast_simulator.ipynb
+                          Combined fixed-test baseline evaluation and experimental
+                          2026/27 forecast simulator
 outputs/figures/          Generated figures
 outputs/tables/           Metrics and test predictions
 project_proposal/         Submitted proposal
@@ -65,16 +66,18 @@ The script recreates:
 - `outputs/tables/test_predictions.csv`
 - `outputs/figures/model_comparison_mae.png`
 
-The separate experimental future-forecast workflow can be reproduced with:
+The experimental future-forecast workflow can be reproduced with:
 
 ```bash
 python src/future_forecast.py
 ```
 
 It creates `outputs/tables/forecast_2026_27.csv` and the associated lag-model
-validation and test tables. The notebook
-`04_future_forecast_simulator.ipynb` adds an interactive region and vineyard-area
-scenario interface. The original notebook 03 is retained unchanged in purpose.
+validation and test tables. The notebook `03_forecast_simulator.ipynb`
+consolidates the former simulator notebooks: it first reproduces the strict
+fixed 2023-2025 baseline evaluation and then presents the experimental
+one-step-ahead 2026/27 forecast simulator with an interactive region and
+vineyard-area scenario interface.
 
 ## Data sources
 

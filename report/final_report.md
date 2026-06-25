@@ -203,11 +203,14 @@ single point estimates.
 
 ### 7.1 Experimental one-year-ahead extension
 
-After the primary comparison, an additional experimental workflow was created
-in `04_future_forecast_simulator.ipynb`. It uses the previous two campaigns,
-the mean of the previous three campaigns, the latest production change,
-vineyard area, region, and year. Every lag is shifted within region before the
-target campaign, so the target itself is never used as an input.
+After the primary comparison, the historical simulator and the experimental
+future-forecast workflow were consolidated in
+`03_forecast_simulator.ipynb`. The notebook first reproduces the strict
+fixed-period baseline evaluation and then presents the one-step-ahead extension.
+The extension uses the previous two campaigns, the mean of the previous three
+campaigns, the latest production change, vineyard area, region, and year. Every
+lag is shifted within region before the target campaign, so the target itself is
+never used as an input.
 
 With the same rolling-validation years, a random forest with lag features had
 the best validation MAE (52,314 hl). In one-step-ahead tests over 2023-2025, it
