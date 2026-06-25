@@ -156,9 +156,14 @@ custom_css = """
     --muted: #76676b;
 }
 
+body, .gradio-container {
+    background: #fbf5f1 !important;
+}
+
 .gradio-container {
-    max-width: 1180px !important;
+    max-width: 1280px !important;
     margin: 0 auto !important;
+    padding: 22px 34px !important;
     background:
         radial-gradient(circle at 10% 0%, rgba(194, 147, 72, 0.18), transparent 26%),
         radial-gradient(circle at 95% 8%, rgba(111, 18, 50, 0.16), transparent 24%),
@@ -325,20 +330,25 @@ button.primary {
 theme = gr.themes.Soft(primary_hue="rose", secondary_hue="orange", neutral_hue="stone")
 
 with gr.Blocks(
-    title="Wine Production Predictor",
+    title="Wine Production Dashboard",
     theme=theme,
     css=custom_css,
 ) as demo:
     gr.HTML(
         """
         <section class="hero">
-            <span class="hero-kicker">Experimental forecast prototype</span>
-            <h1>Wine Production Predictor</h1>
+            <span class="hero-kicker">Professional dashboard ? 2026/27 forecast</span>
+            <h1>Wine Production Dashboard</h1>
             <p>
                 Forecast 2026/27 wine production for Portuguese viticultural
-                regions using lagged production, vineyard area scenarios, and
+                regions using lagged production, vineyard-area scenarios, and
                 rolling-origin model validation.
             </p>
+            <div style="margin-top: 22px; display:flex; gap:12px; flex-wrap:wrap;">
+                <span style="background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px;">?? IVV official data</span>
+                <span style="background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px;">?? One-step-ahead model</span>
+                <span style="background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px;">?? Scenario simulator</span>
+            </div>
         </section>
         """
     )
