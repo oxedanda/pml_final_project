@@ -74,7 +74,10 @@ python src/future_forecast.py
 ```
 
 It creates `outputs/tables/forecast_2026_27.csv` and the associated lag-model
-validation and test tables. The notebook `03_forecast_simulator.ipynb`
+validation and test tables. The forecast interval uses region-specific
+validation errors plus a historical regional lower floor, so regions with
+positive historical production are not shown with misleading zero lower bounds.
+The notebook `03_forecast_simulator.ipynb`
 consolidates the former simulator notebooks: it first reproduces the strict
 fixed 2023-2025 baseline evaluation and then presents the experimental
 one-step-ahead 2026/27 forecast simulator with an interactive region and

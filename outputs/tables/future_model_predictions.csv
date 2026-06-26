@@ -1,0 +1,673 @@
+region,year_start,total_production_hl,model,split,predicted_production_hl,absolute_error_hl
+Alentejo,2018,1092617,Persistence (previous campaign),rolling_validation_2018_2022,954910.0,137707.0
+Algarve,2018,17042,Persistence (previous campaign),rolling_validation_2018_2022,15777.0,1265.0
+Açores,2018,13285,Persistence (previous campaign),rolling_validation_2018_2022,5034.0,8251.0
+Bairrada,2018,177782,Persistence (previous campaign),rolling_validation_2018_2022,260668.0,82886.0
+Beira Interior,2018,162032,Persistence (previous campaign),rolling_validation_2018_2022,190394.0,28362.0
+Douro,2018,1259683,Persistence (previous campaign),rolling_validation_2018_2022,1448874.0,189191.0
+Dão,2018,178409,Persistence (previous campaign),rolling_validation_2018_2022,312462.0,134053.0
+Lisboa,2018,1170068,Persistence (previous campaign),rolling_validation_2018_2022,1225840.0,55772.0
+Madeira,2018,34880,Persistence (previous campaign),rolling_validation_2018_2022,42773.0,7893.0
+P. Setúbal,2018,472197,Persistence (previous campaign),rolling_validation_2018_2022,525049.0,52852.0
+T. Montes,2018,50670,Persistence (previous campaign),rolling_validation_2018_2022,85430.0,34760.0
+Tejo,2018,635514,Persistence (previous campaign),rolling_validation_2018_2022,648441.0,12927.0
+Távora-Varosa,2018,37307,Persistence (previous campaign),rolling_validation_2018_2022,54052.0,16745.0
+Verdes,2018,759757,Persistence (previous campaign),rolling_validation_2018_2022,967067.0,207310.0
+Alentejo,2019,996290,Persistence (previous campaign),rolling_validation_2018_2022,1092617.0,96327.0
+Algarve,2019,13926,Persistence (previous campaign),rolling_validation_2018_2022,17042.0,3116.0
+Açores,2019,13246,Persistence (previous campaign),rolling_validation_2018_2022,13285.0,39.0
+Bairrada,2019,159063,Persistence (previous campaign),rolling_validation_2018_2022,177782.0,18719.0
+Beira Interior,2019,255658,Persistence (previous campaign),rolling_validation_2018_2022,162032.0,93626.0
+Douro,2019,1692188,Persistence (previous campaign),rolling_validation_2018_2022,1259683.0,432505.0
+Dão,2019,257481,Persistence (previous campaign),rolling_validation_2018_2022,178409.0,79072.0
+Lisboa,2019,987009,Persistence (previous campaign),rolling_validation_2018_2022,1170068.0,183059.0
+Madeira,2019,38559,Persistence (previous campaign),rolling_validation_2018_2022,34880.0,3679.0
+P. Setúbal,2019,503579,Persistence (previous campaign),rolling_validation_2018_2022,472197.0,31382.0
+T. Montes,2019,118014,Persistence (previous campaign),rolling_validation_2018_2022,50670.0,67344.0
+Tejo,2019,615736,Persistence (previous campaign),rolling_validation_2018_2022,635514.0,19778.0
+Távora-Varosa,2019,59417,Persistence (previous campaign),rolling_validation_2018_2022,37307.0,22110.0
+Verdes,2019,816396,Persistence (previous campaign),rolling_validation_2018_2022,759757.0,56639.0
+Alentejo,2020,1159067,Persistence (previous campaign),rolling_validation_2018_2022,996290.0,162777.0
+Algarve,2020,13043,Persistence (previous campaign),rolling_validation_2018_2022,13926.0,883.0
+Açores,2020,8350,Persistence (previous campaign),rolling_validation_2018_2022,13246.0,4896.0
+Bairrada,2020,174391,Persistence (previous campaign),rolling_validation_2018_2022,159063.0,15328.0
+Beira Interior,2020,219298,Persistence (previous campaign),rolling_validation_2018_2022,255658.0,36360.0
+Douro,2020,1264349,Persistence (previous campaign),rolling_validation_2018_2022,1692188.0,427839.0
+Dão,2020,189197,Persistence (previous campaign),rolling_validation_2018_2022,257481.0,68284.0
+Lisboa,2020,1253303,Persistence (previous campaign),rolling_validation_2018_2022,987009.0,266294.0
+Madeira,2020,37264,Persistence (previous campaign),rolling_validation_2018_2022,38559.0,1295.0
+P. Setúbal,2020,475135,Persistence (previous campaign),rolling_validation_2018_2022,503579.0,28444.0
+T. Montes,2020,94425,Persistence (previous campaign),rolling_validation_2018_2022,118014.0,23589.0
+Tejo,2020,644153,Persistence (previous campaign),rolling_validation_2018_2022,615736.0,28417.0
+Távora-Varosa,2020,37744,Persistence (previous campaign),rolling_validation_2018_2022,59417.0,21673.0
+Verdes,2020,848311,Persistence (previous campaign),rolling_validation_2018_2022,816396.0,31915.0
+Alentejo,2021,1289473,Persistence (previous campaign),rolling_validation_2018_2022,1159067.0,130406.0
+Algarve,2021,15939,Persistence (previous campaign),rolling_validation_2018_2022,13043.0,2896.0
+Açores,2021,6458,Persistence (previous campaign),rolling_validation_2018_2022,8350.0,1892.0
+Bairrada,2021,180630,Persistence (previous campaign),rolling_validation_2018_2022,174391.0,6239.0
+Beira Interior,2021,261418,Persistence (previous campaign),rolling_validation_2018_2022,219298.0,42120.0
+Douro,2021,1614569,Persistence (previous campaign),rolling_validation_2018_2022,1264349.0,350220.0
+Dão,2021,286821,Persistence (previous campaign),rolling_validation_2018_2022,189197.0,97624.0
+Lisboa,2021,1339162,Persistence (previous campaign),rolling_validation_2018_2022,1253303.0,85859.0
+Madeira,2021,37612,Persistence (previous campaign),rolling_validation_2018_2022,37264.0,348.0
+P. Setúbal,2021,548124,Persistence (previous campaign),rolling_validation_2018_2022,475135.0,72989.0
+T. Montes,2021,106029,Persistence (previous campaign),rolling_validation_2018_2022,94425.0,11604.0
+Tejo,2021,713233,Persistence (previous campaign),rolling_validation_2018_2022,644153.0,69080.0
+Távora-Varosa,2021,65378,Persistence (previous campaign),rolling_validation_2018_2022,37744.0,27634.0
+Verdes,2021,893694,Persistence (previous campaign),rolling_validation_2018_2022,848311.0,45383.0
+Alentejo,2022,1133578,Persistence (previous campaign),rolling_validation_2018_2022,1289473.0,155895.0
+Algarve,2022,15842,Persistence (previous campaign),rolling_validation_2018_2022,15939.0,97.0
+Açores,2022,4676,Persistence (previous campaign),rolling_validation_2018_2022,6458.0,1782.0
+Bairrada,2022,202082,Persistence (previous campaign),rolling_validation_2018_2022,180630.0,21452.0
+Beira Interior,2022,202018,Persistence (previous campaign),rolling_validation_2018_2022,261418.0,59400.0
+Douro,2022,1457083,Persistence (previous campaign),rolling_validation_2018_2022,1614569.0,157486.0
+Dão,2022,279213,Persistence (previous campaign),rolling_validation_2018_2022,286821.0,7608.0
+Lisboa,2022,1194362,Persistence (previous campaign),rolling_validation_2018_2022,1339162.0,144800.0
+Madeira,2022,38390,Persistence (previous campaign),rolling_validation_2018_2022,37612.0,778.0
+P. Setúbal,2022,500044,Persistence (previous campaign),rolling_validation_2018_2022,548124.0,48080.0
+T. Montes,2022,82646,Persistence (previous campaign),rolling_validation_2018_2022,106029.0,23383.0
+Tejo,2022,686334,Persistence (previous campaign),rolling_validation_2018_2022,713233.0,26899.0
+Távora-Varosa,2022,47869,Persistence (previous campaign),rolling_validation_2018_2022,65378.0,17509.0
+Verdes,2022,1004277,Persistence (previous campaign),rolling_validation_2018_2022,893694.0,110583.0
+Alentejo,2018,1092617,Linear regression with lags,rolling_validation_2018_2022,1150708.9906325943,58091.99063259433
+Algarve,2018,17042,Linear regression with lags,rolling_validation_2018_2022,59868.230883885815,42826.230883885815
+Açores,2018,13285,Linear regression with lags,rolling_validation_2018_2022,57212.221034975315,43927.221034975315
+Bairrada,2018,177782,Linear regression with lags,rolling_validation_2018_2022,269868.32940197707,92086.32940197707
+Beira Interior,2018,162032,Linear regression with lags,rolling_validation_2018_2022,239094.39621757646,77062.39621757646
+Douro,2018,1259683,Linear regression with lags,rolling_validation_2018_2022,1448382.3715602802,188699.3715602802
+Dão,2018,178409,Linear regression with lags,rolling_validation_2018_2022,308119.5250388799,129710.52503887989
+Lisboa,2018,1170068,Linear regression with lags,rolling_validation_2018_2022,979036.9147784195,191031.08522158046
+Madeira,2018,34880,Linear regression with lags,rolling_validation_2018_2022,89443.05754433159,54563.05754433159
+P. Setúbal,2018,472197,Linear regression with lags,rolling_validation_2018_2022,476886.49280444585,4689.49280444585
+T. Montes,2018,50670,Linear regression with lags,rolling_validation_2018_2022,132058.80186923879,81388.80186923879
+Tejo,2018,635514,Linear regression with lags,rolling_validation_2018_2022,571179.3918034269,64334.6081965731
+Távora-Varosa,2018,37307,Linear regression with lags,rolling_validation_2018_2022,74786.03206699394,37479.03206699394
+Verdes,2018,759757,Linear regression with lags,rolling_validation_2018_2022,772582.2873887992,12825.287388799246
+Alentejo,2019,996290,Linear regression with lags,rolling_validation_2018_2022,1092870.8920041826,96580.89200418256
+Algarve,2019,13926,Linear regression with lags,rolling_validation_2018_2022,53820.784533968894,39894.784533968894
+Açores,2019,13246,Linear regression with lags,rolling_validation_2018_2022,48123.468967302586,34877.468967302586
+Bairrada,2019,159063,Linear regression with lags,rolling_validation_2018_2022,274041.7633890833,114978.76338908332
+Beira Interior,2019,255658,Linear regression with lags,rolling_validation_2018_2022,219008.70015060494,36649.29984939506
+Douro,2019,1692188,Linear regression with lags,rolling_validation_2018_2022,1468290.979490345,223897.0205096549
+Dão,2019,257481,Linear regression with lags,rolling_validation_2018_2022,321912.429664969,64431.42966496898
+Lisboa,2019,987009,Linear regression with lags,rolling_validation_2018_2022,1080088.316279943,93079.3162799431
+Madeira,2019,38559,Linear regression with lags,rolling_validation_2018_2022,84062.06722201366,45503.06722201366
+P. Setúbal,2019,503579,Linear regression with lags,rolling_validation_2018_2022,507979.75840910274,4400.758409102738
+T. Montes,2019,118014,Linear regression with lags,rolling_validation_2018_2022,125303.72632995591,7289.726329955913
+Tejo,2019,615736,Linear regression with lags,rolling_validation_2018_2022,608411.0589261627,7324.941073837341
+Távora-Varosa,2019,59417,Linear regression with lags,rolling_validation_2018_2022,71154.05469919683,11737.05469919683
+Verdes,2019,816396,Linear regression with lags,rolling_validation_2018_2022,864634.5479562709,48238.547956270864
+Alentejo,2020,1159067,Linear regression with lags,rolling_validation_2018_2022,1132572.223008307,26494.77699169307
+Algarve,2020,13043,Linear regression with lags,rolling_validation_2018_2022,52231.38968844252,39188.38968844252
+Açores,2020,8350,Linear regression with lags,rolling_validation_2018_2022,47701.59491811198,39351.59491811198
+Bairrada,2020,174391,Linear regression with lags,rolling_validation_2018_2022,261070.6209283018,86679.6209283018
+Beira Interior,2020,219298,Linear regression with lags,rolling_validation_2018_2022,207177.80426006793,12120.195739932067
+Douro,2020,1264349,Linear regression with lags,rolling_validation_2018_2022,1380479.9334574158,116130.93345741578
+Dão,2020,189197,Linear regression with lags,rolling_validation_2018_2022,286294.53023919906,97097.53023919906
+Lisboa,2020,1253303,Linear regression with lags,rolling_validation_2018_2022,1083354.9969941478,169948.00300585222
+Madeira,2020,37264,Linear regression with lags,rolling_validation_2018_2022,79867.777285969,42603.777285969
+P. Setúbal,2020,475135,Linear regression with lags,rolling_validation_2018_2022,489441.25257538777,14306.25257538777
+T. Montes,2020,94425,Linear regression with lags,rolling_validation_2018_2022,105982.4421986108,11557.442198610806
+Tejo,2020,644153,Linear regression with lags,rolling_validation_2018_2022,600212.7362422785,43940.26375772152
+Távora-Varosa,2020,37744,Linear regression with lags,rolling_validation_2018_2022,60985.77464669949,23241.774646699487
+Verdes,2020,848311,Linear regression with lags,rolling_validation_2018_2022,809232.6135473135,39078.38645268651
+Alentejo,2021,1289473,Linear regression with lags,rolling_validation_2018_2022,1072705.9408735493,216767.05912645068
+Algarve,2021,15939,Linear regression with lags,rolling_validation_2018_2022,50719.45184554899,34780.45184554899
+Açores,2021,6458,Linear regression with lags,rolling_validation_2018_2022,47592.24436966365,41134.24436966365
+Bairrada,2021,180630,Linear regression with lags,rolling_validation_2018_2022,241837.67088898458,61207.670888984576
+Beira Interior,2021,261418,Linear regression with lags,rolling_validation_2018_2022,229649.779755877,31768.22024412299
+Douro,2021,1614569,Linear regression with lags,rolling_validation_2018_2022,1542261.6822663546,72307.31773364544
+Dão,2021,286821,Linear regression with lags,rolling_validation_2018_2022,301630.918874106,14809.91887410602
+Lisboa,2021,1339162,Linear regression with lags,rolling_validation_2018_2022,1023737.1731104786,315424.82688952144
+Madeira,2021,37612,Linear regression with lags,rolling_validation_2018_2022,78404.53121386102,40792.53121386102
+P. Setúbal,2021,548124,Linear regression with lags,rolling_validation_2018_2022,511429.43752719264,36694.56247280736
+T. Montes,2021,106029,Linear regression with lags,rolling_validation_2018_2022,119513.76482381928,13484.764823819278
+Tejo,2021,713233,Linear regression with lags,rolling_validation_2018_2022,607732.1772168663,105500.82278313371
+Távora-Varosa,2021,65378,Linear regression with lags,rolling_validation_2018_2022,70356.31262675783,4978.312626757834
+Verdes,2021,893694,Linear regression with lags,rolling_validation_2018_2022,821698.9151200717,71995.08487992827
+Alentejo,2022,1133578,Linear regression with lags,rolling_validation_2018_2022,1126231.983148553,7346.016851447057
+Algarve,2022,15842,Linear regression with lags,rolling_validation_2018_2022,70157.11530065374,54315.115300653735
+Açores,2022,4676,Linear regression with lags,rolling_validation_2018_2022,67125.83775059722,62449.83775059722
+Bairrada,2022,202082,Linear regression with lags,rolling_validation_2018_2022,244321.56635745286,42239.56635745286
+Beira Interior,2022,202018,Linear regression with lags,rolling_validation_2018_2022,238049.96810521177,36031.96810521177
+Douro,2022,1457083,Linear regression with lags,rolling_validation_2018_2022,1421551.960654508,35531.03934549191
+Dão,2022,279213,Linear regression with lags,rolling_validation_2018_2022,274988.22023426875,4224.779765731248
+Lisboa,2022,1194362,Linear regression with lags,rolling_validation_2018_2022,1121954.0150485313,72407.98495146865
+Madeira,2022,38390,Linear regression with lags,rolling_validation_2018_2022,97407.96056150226,59017.96056150226
+P. Setúbal,2022,500044,Linear regression with lags,rolling_validation_2018_2022,522230.5808866726,22186.5808866726
+T. Montes,2022,82646,Linear regression with lags,rolling_validation_2018_2022,129657.92706037714,47011.927060377144
+Tejo,2022,686334,Linear regression with lags,rolling_validation_2018_2022,639103.3638548311,47230.636145168915
+Távora-Varosa,2022,47869,Linear regression with lags,rolling_validation_2018_2022,72815.37201549235,24946.37201549235
+Verdes,2022,1004277,Linear regression with lags,rolling_validation_2018_2022,853211.0484393676,151065.95156063244
+Alentejo,2018,1092617,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1108600.6950174612,15983.6950174612
+Algarve,2018,17042,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,49455.666490862146,32413.666490862146
+Açores,2018,13285,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,46273.31500222592,32988.31500222592
+Bairrada,2018,177782,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,245953.8220872362,68171.82208723621
+Beira Interior,2018,162032,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,257062.05509255658,95030.05509255658
+Douro,2018,1259683,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1430947.7832581447,171264.78325814474
+Dão,2018,178409,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,291832.4911970567,113423.49119705672
+Lisboa,2018,1170068,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1084730.740081871,85337.25991812907
+Madeira,2018,34880,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,78047.91318470036,43167.91318470036
+P. Setúbal,2018,472197,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,524049.04246532684,51852.04246532684
+T. Montes,2018,50670,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,112589.65234817471,61919.65234817471
+Tejo,2018,635514,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,603717.2496742974,31796.750325702596
+Távora-Varosa,2018,37307,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,83695.67634679412,46388.67634679412
+Verdes,2018,759757,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,812536.3690460178,52779.36904601776
+Alentejo,2019,996290,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1042242.5174904834,45952.517490483355
+Algarve,2019,13926,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,42098.64659143629,28172.646591436293
+Açores,2019,13246,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,35681.24438066315,22435.24438066315
+Bairrada,2019,159063,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,238383.16871229242,79320.16871229242
+Beira Interior,2019,255658,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,206186.49168686592,49471.50831313408
+Douro,2019,1692188,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1388780.1515392961,303407.84846070386
+Dão,2019,257481,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,276395.63201552856,18914.632015528565
+Lisboa,2019,987009,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1165587.8094241659,178578.80942416587
+Madeira,2019,38559,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,68841.77994339389,30282.779943393893
+P. Setúbal,2019,503579,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,533803.8463319733,30224.846331973327
+T. Montes,2019,118014,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,92986.63649807381,25027.363501926186
+Tejo,2019,615736,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,640538.417613673,24802.417613673024
+Távora-Varosa,2019,59417,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,63440.69297442614,4023.6929744261433
+Verdes,2019,816396,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,880177.6228397024,63781.62283970241
+Alentejo,2020,1159067,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1089881.192016216,69185.807983784
+Algarve,2020,13043,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,42038.516800150624,28995.516800150624
+Açores,2020,8350,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,38767.69009155122,30417.690091551223
+Bairrada,2020,174391,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,212727.02901249065,38336.029012490646
+Beira Interior,2020,219298,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,195951.518149237,23346.481850762997
+Douro,2020,1264349,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1379813.5291722182,115464.52917221817
+Dão,2020,189197,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,237747.50545191584,48550.505451915844
+Lisboa,2020,1253303,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1143727.7144915941,109575.28550840588
+Madeira,2020,37264,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,66030.72081350576,28766.72081350576
+P. Setúbal,2020,475135,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,514945.13673037244,39810.13673037244
+T. Montes,2020,94425,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,82491.78215484513,11933.217845154868
+Tejo,2020,644153,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,638675.9714978172,5477.028502182802
+Távora-Varosa,2020,37744,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,48942.992162017676,11198.992162017676
+Verdes,2020,848311,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,816000.8387202397,32310.1612797603
+Alentejo,2021,1289473,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1070934.6190049262,218538.38099507382
+Algarve,2021,15939,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,40973.555544910836,25034.555544910836
+Açores,2021,6458,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,40140.841251361766,33682.841251361766
+Bairrada,2021,180630,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,187859.28201425477,7229.282014254772
+Beira Interior,2021,261418,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,236899.61823285563,24518.38176714437
+Douro,2021,1614569,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1544132.1098386091,70436.89016139088
+Dão,2021,286821,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,249634.0582241125,37186.941775887506
+Lisboa,2021,1339162,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1058847.6760417358,280314.3239582642
+Madeira,2021,37612,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,65816.16613546357,28204.166135463573
+P. Setúbal,2021,548124,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,522140.9279895142,25983.072010485805
+T. Montes,2021,106029,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,109671.14112104836,3642.141121048364
+Tejo,2021,713233,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,632663.4002095265,80569.59979047347
+Távora-Varosa,2021,65378,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,60341.240086746286,5036.759913253714
+Verdes,2021,893694,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,810582.5949654026,83111.40503459738
+Alentejo,2022,1133578,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1174706.552730877,41128.55273087695
+Algarve,2022,15842,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,61591.96123005805,45749.96123005805
+Açores,2022,4676,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,58838.15021441318,54162.15021441318
+Bairrada,2022,202082,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,205913.9701510408,3831.9701510407904
+Beira Interior,2022,202018,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,255868.88985309628,53850.889853096276
+Douro,2022,1457083,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1441806.2565867123,15276.74341328768
+Dão,2022,279213,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,248024.214029357,31188.785970642988
+Lisboa,2022,1194362,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,1203353.0972730776,8991.097273077583
+Madeira,2022,38390,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,87034.78681001626,48644.78681001626
+P. Setúbal,2022,500044,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,540100.9053609723,40056.905360972276
+T. Montes,2022,82646,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,127030.53907583316,44384.53907583316
+Tejo,2022,686334,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,673985.1784874653,12348.821512534749
+Távora-Varosa,2022,47869,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,68455.1034377559,20586.103437755897
+Verdes,2022,1004277,Ridge with lags (alpha=0.1),rolling_validation_2018_2022,867881.7341649682,136395.26583503175
+Alentejo,2018,1092617,Ridge with lags (alpha=1),rolling_validation_2018_2022,1068902.3600779683,23714.639922031667
+Algarve,2018,17042,Ridge with lags (alpha=1),rolling_validation_2018_2022,44760.928939204605,27718.928939204605
+Açores,2018,13285,Ridge with lags (alpha=1),rolling_validation_2018_2022,40571.920390472806,27286.920390472806
+Bairrada,2018,177782,Ridge with lags (alpha=1),rolling_validation_2018_2022,239247.07801012776,61465.07801012776
+Beira Interior,2018,162032,Ridge with lags (alpha=1),rolling_validation_2018_2022,261202.83477196321,99170.83477196321
+Douro,2018,1259683,Ridge with lags (alpha=1),rolling_validation_2018_2022,1403516.6736426675,143833.67364266748
+Dão,2018,178409,Ridge with lags (alpha=1),rolling_validation_2018_2022,285050.5140736487,106641.51407364872
+Lisboa,2018,1170068,Ridge with lags (alpha=1),rolling_validation_2018_2022,1101862.0973675535,68205.9026324465
+Madeira,2018,34880,Ridge with lags (alpha=1),rolling_validation_2018_2022,71900.21585972002,37020.21585972002
+P. Setúbal,2018,472197,Ridge with lags (alpha=1),rolling_validation_2018_2022,529130.7836145264,56933.78361452639
+T. Montes,2018,50670,Ridge with lags (alpha=1),rolling_validation_2018_2022,105971.8742335157,55301.8742335157
+Tejo,2018,635514,Ridge with lags (alpha=1),rolling_validation_2018_2022,609041.8058338802,26472.194166119792
+Távora-Varosa,2018,37307,Ridge with lags (alpha=1),rolling_validation_2018_2022,86725.34266063146,49418.34266063146
+Verdes,2018,759757,Ridge with lags (alpha=1),rolling_validation_2018_2022,824309.5079706474,64552.50797064742
+Alentejo,2019,996290,Ridge with lags (alpha=1),rolling_validation_2018_2022,1020207.7286456602,23917.728645660216
+Algarve,2019,13926,Ridge with lags (alpha=1),rolling_validation_2018_2022,38122.445655476244,24196.445655476244
+Açores,2019,13246,Ridge with lags (alpha=1),rolling_validation_2018_2022,31260.368998520134,18014.368998520134
+Bairrada,2019,159063,Ridge with lags (alpha=1),rolling_validation_2018_2022,231710.7882267789,72647.78822677891
+Beira Interior,2019,255658,Ridge with lags (alpha=1),rolling_validation_2018_2022,198577.18370426496,57080.81629573504
+Douro,2019,1692188,Ridge with lags (alpha=1),rolling_validation_2018_2022,1363894.2317944164,328293.76820558356
+Dão,2019,257481,Ridge with lags (alpha=1),rolling_validation_2018_2022,264994.10527930537,7513.105279305368
+Lisboa,2019,987009,Ridge with lags (alpha=1),rolling_validation_2018_2022,1200553.4137368384,213544.41373683838
+Madeira,2019,38559,Ridge with lags (alpha=1),rolling_validation_2018_2022,63257.08762621053,24698.08762621053
+P. Setúbal,2019,503579,Ridge with lags (alpha=1),rolling_validation_2018_2022,538230.8544275415,34651.85442754149
+T. Montes,2019,118014,Ridge with lags (alpha=1),rolling_validation_2018_2022,83957.16779436526,34056.83220563474
+Tejo,2019,615736,Ridge with lags (alpha=1),rolling_validation_2018_2022,653601.3942566772,37865.394256677246
+Távora-Varosa,2019,59417,Ridge with lags (alpha=1),rolling_validation_2018_2022,61413.438318739354,1996.4383187393541
+Verdes,2019,816396,Ridge with lags (alpha=1),rolling_validation_2018_2022,889503.8643316799,73107.86433167988
+Alentejo,2020,1159067,Ridge with lags (alpha=1),rolling_validation_2018_2022,1072953.1483283197,86113.85167168034
+Algarve,2020,13043,Ridge with lags (alpha=1),rolling_validation_2018_2022,36209.574385029206,23166.574385029206
+Açores,2020,8350,Ridge with lags (alpha=1),rolling_validation_2018_2022,34220.112619261665,25870.112619261665
+Bairrada,2020,174391,Ridge with lags (alpha=1),rolling_validation_2018_2022,187487.31058389333,13096.310583893326
+Beira Interior,2020,219298,Ridge with lags (alpha=1),rolling_validation_2018_2022,198634.78221443543,20663.21778556457
+Douro,2020,1264349,Ridge with lags (alpha=1),rolling_validation_2018_2022,1393387.5945450517,129038.59454505169
+Dão,2020,189197,Ridge with lags (alpha=1),rolling_validation_2018_2022,214978.81958623973,25781.819586239726
+Lisboa,2020,1253303,Ridge with lags (alpha=1),rolling_validation_2018_2022,1140786.3263553947,112516.67364460533
+Madeira,2020,37264,Ridge with lags (alpha=1),rolling_validation_2018_2022,57946.98577382864,20682.985773828637
+P. Setúbal,2020,475135,Ridge with lags (alpha=1),rolling_validation_2018_2022,515487.93017535907,40352.93017535907
+T. Montes,2020,94425,Ridge with lags (alpha=1),rolling_validation_2018_2022,77698.38139126083,16726.61860873917
+Tejo,2020,644153,Ridge with lags (alpha=1),rolling_validation_2018_2022,646634.5265301566,2481.5265301566105
+Távora-Varosa,2020,37744,Ridge with lags (alpha=1),rolling_validation_2018_2022,46404.10509372532,8660.105093725317
+Verdes,2020,848311,Ridge with lags (alpha=1),rolling_validation_2018_2022,800828.3691850669,47482.6308149331
+Alentejo,2021,1289473,Ridge with lags (alpha=1),rolling_validation_2018_2022,1066635.1628342061,222837.83716579387
+Algarve,2021,15939,Ridge with lags (alpha=1),rolling_validation_2018_2022,36202.78110174922,20263.78110174922
+Açores,2021,6458,Ridge with lags (alpha=1),rolling_validation_2018_2022,36200.15069176094,29742.150691760937
+Bairrada,2021,180630,Ridge with lags (alpha=1),rolling_validation_2018_2022,167454.41409879248,13175.585901207523
+Beira Interior,2021,261418,Ridge with lags (alpha=1),rolling_validation_2018_2022,249828.44052952304,11589.559470476961
+Douro,2021,1614569,Ridge with lags (alpha=1),rolling_validation_2018_2022,1559213.177177693,55355.822822307004
+Dão,2021,286821,Ridge with lags (alpha=1),rolling_validation_2018_2022,234422.29044728127,52398.709552718734
+Lisboa,2021,1339162,Ridge with lags (alpha=1),rolling_validation_2018_2022,1071643.061990458,267518.93800954195
+Madeira,2021,37612,Ridge with lags (alpha=1),rolling_validation_2018_2022,60162.40161374182,22550.401613741822
+P. Setúbal,2021,548124,Ridge with lags (alpha=1),rolling_validation_2018_2022,524232.18560677866,23891.814393221342
+T. Montes,2021,106029,Ridge with lags (alpha=1),rolling_validation_2018_2022,113524.570238435,7495.570238435001
+Tejo,2021,713233,Ridge with lags (alpha=1),rolling_validation_2018_2022,641547.8282514439,71685.17174855608
+Távora-Varosa,2021,65378,Ridge with lags (alpha=1),rolling_validation_2018_2022,58883.07513755426,6494.92486244574
+Verdes,2021,893694,Ridge with lags (alpha=1),rolling_validation_2018_2022,815804.4883704679,77889.51162953209
+Alentejo,2022,1133578,Ridge with lags (alpha=1),rolling_validation_2018_2022,1217078.8081557846,83500.80815578462
+Algarve,2022,15842,Ridge with lags (alpha=1),rolling_validation_2018_2022,55825.39989350038,39983.39989350038
+Açores,2022,4676,Ridge with lags (alpha=1),rolling_validation_2018_2022,52294.56449792697,47618.56449792697
+Bairrada,2022,202082,Ridge with lags (alpha=1),rolling_validation_2018_2022,192585.38277375133,9496.617226248665
+Beira Interior,2022,202018,Ridge with lags (alpha=1),rolling_validation_2018_2022,265467.9155582818,63449.91555828182
+Douro,2022,1457083,Ridge with lags (alpha=1),rolling_validation_2018_2022,1434141.359926262,22941.64007373806
+Dão,2022,279213,Ridge with lags (alpha=1),rolling_validation_2018_2022,238570.22050765404,40642.77949234596
+Lisboa,2022,1194362,Ridge with lags (alpha=1),rolling_validation_2018_2022,1270633.1305264141,76271.13052641414
+Madeira,2022,38390,Ridge with lags (alpha=1),rolling_validation_2018_2022,79875.72591175901,41485.725911759015
+P. Setúbal,2022,500044,Ridge with lags (alpha=1),rolling_validation_2018_2022,546520.772121792,46476.77212179196
+T. Montes,2022,82646,Ridge with lags (alpha=1),rolling_validation_2018_2022,126141.30480671802,43495.30480671802
+Tejo,2022,686334,Ridge with lags (alpha=1),rolling_validation_2018_2022,695600.7241954732,9266.724195473245
+Távora-Varosa,2022,47869,Ridge with lags (alpha=1),rolling_validation_2018_2022,68204.15445781592,20335.154457815923
+Verdes,2022,1004277,Ridge with lags (alpha=1),rolling_validation_2018_2022,881257.8057045637,123019.19429543626
+Alentejo,2018,1092617,Ridge with lags (alpha=10),rolling_validation_2018_2022,1035443.9548337634,57173.04516623658
+Algarve,2018,17042,Ridge with lags (alpha=10),rolling_validation_2018_2022,44553.09243435896,27511.092434358958
+Açores,2018,13285,Ridge with lags (alpha=10),rolling_validation_2018_2022,40439.34378656768,27154.343786567682
+Bairrada,2018,177782,Ridge with lags (alpha=10),rolling_validation_2018_2022,258438.20744396345,80656.20744396345
+Beira Interior,2018,162032,Ridge with lags (alpha=10),rolling_validation_2018_2022,275227.0825200393,113195.08252003929
+Douro,2018,1259683,Ridge with lags (alpha=10),rolling_validation_2018_2022,1398393.776350313,138710.7763503131
+Dão,2018,178409,Ridge with lags (alpha=10),rolling_validation_2018_2022,301737.01241911354,123328.01241911354
+Lisboa,2018,1170068,Ridge with lags (alpha=10),rolling_validation_2018_2022,1062065.8494363893,108002.15056361072
+Madeira,2018,34880,Ridge with lags (alpha=10),rolling_validation_2018_2022,68966.58557058382,34086.58557058382
+P. Setúbal,2018,472197,Ridge with lags (alpha=10),rolling_validation_2018_2022,500546.83115485095,28349.831154850952
+T. Montes,2018,50670,Ridge with lags (alpha=10),rolling_validation_2018_2022,124718.87505470403,74048.87505470403
+Tejo,2018,635514,Ridge with lags (alpha=10),rolling_validation_2018_2022,590104.5624419282,45409.437558071804
+Távora-Varosa,2018,37307,Ridge with lags (alpha=10),rolling_validation_2018_2022,90248.41294173803,52941.41294173803
+Verdes,2018,759757,Ridge with lags (alpha=10),rolling_validation_2018_2022,812651.8266407982,52894.826640798245
+Alentejo,2019,996290,Ridge with lags (alpha=10),rolling_validation_2018_2022,995513.6982887678,776.3017112321686
+Algarve,2019,13926,Ridge with lags (alpha=10),rolling_validation_2018_2022,36453.319029803155,22527.319029803155
+Açores,2019,13246,Ridge with lags (alpha=10),rolling_validation_2018_2022,29889.13349587936,16643.13349587936
+Bairrada,2019,159063,Ridge with lags (alpha=10),rolling_validation_2018_2022,248499.46027803636,89436.46027803636
+Beira Interior,2019,255658,Ridge with lags (alpha=10),rolling_validation_2018_2022,213302.65146060885,42355.348539391154
+Douro,2019,1692188,Ridge with lags (alpha=10),rolling_validation_2018_2022,1369288.4618202467,322899.53817975335
+Dão,2019,257481,Ridge with lags (alpha=10),rolling_validation_2018_2022,281599.61733539024,24118.61733539024
+Lisboa,2019,987009,Ridge with lags (alpha=10),rolling_validation_2018_2022,1160793.274421203,173784.27442120295
+Madeira,2019,38559,Ridge with lags (alpha=10),rolling_validation_2018_2022,59690.00767591497,21131.007675914967
+P. Setúbal,2019,503579,Ridge with lags (alpha=10),rolling_validation_2018_2022,512059.492774492,8480.492774492013
+T. Montes,2019,118014,Ridge with lags (alpha=10),rolling_validation_2018_2022,98189.98592592217,19824.01407407783
+Tejo,2019,615736,Ridge with lags (alpha=10),rolling_validation_2018_2022,632274.8577107198,16538.857710719807
+Távora-Varosa,2019,59417,Ridge with lags (alpha=10),rolling_validation_2018_2022,66365.63329244952,6948.633292449522
+Verdes,2019,816396,Ridge with lags (alpha=10),rolling_validation_2018_2022,874718.7083074105,58322.708307410474
+Alentejo,2020,1159067,Ridge with lags (alpha=10),rolling_validation_2018_2022,1048855.136151833,110211.863848167
+Algarve,2020,13043,Ridge with lags (alpha=10),rolling_validation_2018_2022,32369.993004501157,19326.993004501157
+Açores,2020,8350,Ridge with lags (alpha=10),rolling_validation_2018_2022,30479.187732376682,22129.187732376682
+Bairrada,2020,174391,Ridge with lags (alpha=10),rolling_validation_2018_2022,201664.00319292358,27273.003192923585
+Beira Interior,2020,219298,Ridge with lags (alpha=10),rolling_validation_2018_2022,214275.35355997382,5022.646440026176
+Douro,2020,1264349,Ridge with lags (alpha=10),rolling_validation_2018_2022,1397445.5370752804,133096.53707528044
+Dão,2020,189197,Ridge with lags (alpha=10),rolling_validation_2018_2022,230028.29194514296,40831.29194514296
+Lisboa,2020,1253303,Ridge with lags (alpha=10),rolling_validation_2018_2022,1104099.7513964938,149203.24860350625
+Madeira,2020,37264,Ridge with lags (alpha=10),rolling_validation_2018_2022,51964.20134253794,14700.201342537941
+P. Setúbal,2020,475135,Ridge with lags (alpha=10),rolling_validation_2018_2022,491377.74862847425,16242.748628474248
+T. Montes,2020,94425,Ridge with lags (alpha=10),rolling_validation_2018_2022,93913.89148434007,511.10851565992925
+Tejo,2020,644153,Ridge with lags (alpha=10),rolling_validation_2018_2022,627962.8604237869,16190.139576213085
+Távora-Varosa,2020,37744,Ridge with lags (alpha=10),rolling_validation_2018_2022,53545.429537447635,15801.429537447635
+Verdes,2020,848311,Ridge with lags (alpha=10),rolling_validation_2018_2022,792969.2244862199,55341.77551378007
+Alentejo,2021,1289473,Ridge with lags (alpha=10),rolling_validation_2018_2022,1044928.1442790322,244544.85572096775
+Algarve,2021,15939,Ridge with lags (alpha=10),rolling_validation_2018_2022,33121.413964932726,17182.413964932726
+Açores,2021,6458,Ridge with lags (alpha=10),rolling_validation_2018_2022,32827.56440670625,26369.564406706253
+Bairrada,2021,180630,Ridge with lags (alpha=10),rolling_validation_2018_2022,184305.05644746165,3675.056447461655
+Beira Interior,2021,261418,Ridge with lags (alpha=10),rolling_validation_2018_2022,262087.0617246827,669.0617246826878
+Douro,2021,1614569,Ridge with lags (alpha=10),rolling_validation_2018_2022,1555880.8120810192,58688.18791898084
+Dão,2021,286821,Ridge with lags (alpha=10),rolling_validation_2018_2022,250688.29953944113,36132.70046055887
+Lisboa,2021,1339162,Ridge with lags (alpha=10),rolling_validation_2018_2022,1049003.119930274,290158.8800697259
+Madeira,2021,37612,Ridge with lags (alpha=10),rolling_validation_2018_2022,55060.53013609117,17448.53013609117
+P. Setúbal,2021,548124,Ridge with lags (alpha=10),rolling_validation_2018_2022,503860.19031139195,44263.809688608046
+T. Montes,2021,106029,Ridge with lags (alpha=10),rolling_validation_2018_2022,125684.55689014372,19655.556890143722
+Tejo,2021,713233,Ridge with lags (alpha=10),rolling_validation_2018_2022,625945.1842249394,87287.81577506056
+Távora-Varosa,2021,65378,Ridge with lags (alpha=10),rolling_validation_2018_2022,64004.167966334266,1373.8320336657343
+Verdes,2021,893694,Ridge with lags (alpha=10),rolling_validation_2018_2022,815900.4516926168,77793.5483073832
+Alentejo,2022,1133578,Ridge with lags (alpha=10),rolling_validation_2018_2022,1202215.4569988807,68637.45699888072
+Algarve,2022,15842,Ridge with lags (alpha=10),rolling_validation_2018_2022,49710.89826512762,33868.89826512762
+Açores,2022,4676,Ridge with lags (alpha=10),rolling_validation_2018_2022,45736.13703759946,41060.13703759946
+Bairrada,2022,202082,Ridge with lags (alpha=10),rolling_validation_2018_2022,209614.2282792387,7532.228279238712
+Beira Interior,2022,202018,Ridge with lags (alpha=10),rolling_validation_2018_2022,275469.022171597,73451.022171597
+Douro,2022,1457083,Ridge with lags (alpha=10),rolling_validation_2018_2022,1431650.6114174596,25432.388582540443
+Dão,2022,279213,Ridge with lags (alpha=10),rolling_validation_2018_2022,254457.95242489933,24755.047575100674
+Lisboa,2022,1194362,Ridge with lags (alpha=10),rolling_validation_2018_2022,1255204.5834710195,60842.58347101952
+Madeira,2022,38390,Ridge with lags (alpha=10),rolling_validation_2018_2022,71696.01742414822,33306.01742414822
+P. Setúbal,2022,500044,Ridge with lags (alpha=10),rolling_validation_2018_2022,527481.1274790859,27437.12747908593
+T. Montes,2022,82646,Ridge with lags (alpha=10),rolling_validation_2018_2022,134038.5016989183,51392.50169891829
+Tejo,2022,686334,Ridge with lags (alpha=10),rolling_validation_2018_2022,682508.818399417,3825.1816005830187
+Távora-Varosa,2022,47869,Ridge with lags (alpha=10),rolling_validation_2018_2022,74246.58031406335,26377.58031406335
+Verdes,2022,1004277,Ridge with lags (alpha=10),rolling_validation_2018_2022,879017.5430644398,125259.45693556021
+Alentejo,2018,1092617,Random forest with lags,rolling_validation_2018_2022,999260.6879253964,93356.31207460363
+Algarve,2018,17042,Random forest with lags,rolling_validation_2018_2022,11422.493997619045,5619.506002380955
+Açores,2018,13285,Random forest with lags,rolling_validation_2018_2022,8755.99383253968,4529.00616746032
+Bairrada,2018,177782,Random forest with lags,rolling_validation_2018_2022,213400.55211904776,35618.55211904776
+Beira Interior,2018,162032,Random forest with lags,rolling_validation_2018_2022,259260.86455714295,97228.86455714295
+Douro,2018,1259683,Random forest with lags,rolling_validation_2018_2022,1415029.5946166657,155346.59461666574
+Dão,2018,178409,Random forest with lags,rolling_validation_2018_2022,251344.8432531747,72935.84325317471
+Lisboa,2018,1170068,Random forest with lags,rolling_validation_2018_2022,1096030.915414285,74037.08458571509
+Madeira,2018,34880,Random forest with lags,rolling_validation_2018_2022,41535.77824444442,6655.7782444444165
+P. Setúbal,2018,472197,Random forest with lags,rolling_validation_2018_2022,503721.0029325396,31524.002932539617
+T. Montes,2018,50670,Random forest with lags,rolling_validation_2018_2022,82540.45718253966,31870.457182539656
+Tejo,2018,635514,Random forest with lags,rolling_validation_2018_2022,541093.6137960316,94420.38620396843
+Távora-Varosa,2018,37307,Random forest with lags,rolling_validation_2018_2022,59832.06040714282,22525.060407142817
+Verdes,2018,759757,Random forest with lags,rolling_validation_2018_2022,818212.9563095239,58455.9563095239
+Alentejo,2019,996290,Random forest with lags,rolling_validation_2018_2022,994240.1319380951,2049.868061904912
+Algarve,2019,13926,Random forest with lags,rolling_validation_2018_2022,14331.87057380953,405.87057380953047
+Açores,2019,13246,Random forest with lags,rolling_validation_2018_2022,10927.17855,2318.8214499999995
+Bairrada,2019,159063,Random forest with lags,rolling_validation_2018_2022,211939.5283904761,52876.5283904761
+Beira Interior,2019,255658,Random forest with lags,rolling_validation_2018_2022,186008.45425238094,69649.54574761906
+Douro,2019,1692188,Random forest with lags,rolling_validation_2018_2022,1393576.040990477,298611.95900952304
+Dão,2019,257481,Random forest with lags,rolling_validation_2018_2022,266501.7325444442,9020.73254444421
+Lisboa,2019,987009,Random forest with lags,rolling_validation_2018_2022,1137327.883169047,150318.88316904707
+Madeira,2019,38559,Random forest with lags,rolling_validation_2018_2022,39683.170659523814,1124.1706595238138
+P. Setúbal,2019,503579,Random forest with lags,rolling_validation_2018_2022,506879.6991428571,3300.6991428571055
+T. Montes,2019,118014,Random forest with lags,rolling_validation_2018_2022,60620.317999999985,57393.682000000015
+Tejo,2019,615736,Random forest with lags,rolling_validation_2018_2022,632957.2580373016,17221.258037301595
+Távora-Varosa,2019,59417,Random forest with lags,rolling_validation_2018_2022,46095.38789920638,13321.612100793624
+Verdes,2019,816396,Random forest with lags,rolling_validation_2018_2022,902855.0216539685,86459.02165396849
+Alentejo,2020,1159067,Random forest with lags,rolling_validation_2018_2022,1049087.0609880947,109979.93901190534
+Algarve,2020,13043,Random forest with lags,rolling_validation_2018_2022,14108.120583333324,1065.1205833333242
+Açores,2020,8350,Random forest with lags,rolling_validation_2018_2022,11319.006250793655,2969.0062507936545
+Bairrada,2020,174391,Random forest with lags,rolling_validation_2018_2022,210702.38946190474,36311.389461904735
+Beira Interior,2020,219298,Random forest with lags,rolling_validation_2018_2022,205718.75537857148,13579.244621428516
+Douro,2020,1264349,Random forest with lags,rolling_validation_2018_2022,1281520.335088096,17171.335088096093
+Dão,2020,189197,Random forest with lags,rolling_validation_2018_2022,207148.00129761902,17951.00129761902
+Lisboa,2020,1253303,Random forest with lags,rolling_validation_2018_2022,1077379.7645936508,175923.23540634918
+Madeira,2020,37264,Random forest with lags,rolling_validation_2018_2022,38770.087726190446,1506.0877261904461
+P. Setúbal,2020,475135,Random forest with lags,rolling_validation_2018_2022,491189.99026782654,16054.990267826535
+T. Montes,2020,94425,Random forest with lags,rolling_validation_2018_2022,72215.77377222224,22209.226227777763
+Tejo,2020,644153,Random forest with lags,rolling_validation_2018_2022,627027.848761111,17125.151238888968
+Távora-Varosa,2020,37744,Random forest with lags,rolling_validation_2018_2022,52203.24465555557,14459.244655555573
+Verdes,2020,848311,Random forest with lags,rolling_validation_2018_2022,754041.5054023807,94269.49459761928
+Alentejo,2021,1289473,Random forest with lags,rolling_validation_2018_2022,1070304.00035,219168.9996499999
+Algarve,2021,15939,Random forest with lags,rolling_validation_2018_2022,13437.791287301583,2501.208712698417
+Açores,2021,6458,Random forest with lags,rolling_validation_2018_2022,9559.971823015872,3101.9718230158724
+Bairrada,2021,180630,Random forest with lags,rolling_validation_2018_2022,191054.4585944446,10424.458594444586
+Beira Interior,2021,261418,Random forest with lags,rolling_validation_2018_2022,210785.38926428565,50632.61073571435
+Douro,2021,1614569,Random forest with lags,rolling_validation_2018_2022,1516460.9801357135,98108.01986428653
+Dão,2021,286821,Random forest with lags,rolling_validation_2018_2022,198619.98582460312,88201.01417539688
+Lisboa,2021,1339162,Random forest with lags,rolling_validation_2018_2022,1165121.3785222229,174040.62147777714
+Madeira,2021,37612,Random forest with lags,rolling_validation_2018_2022,38767.05023809524,1155.0502380952385
+P. Setúbal,2021,548124,Random forest with lags,rolling_validation_2018_2022,505076.4532674603,43047.54673253972
+T. Montes,2021,106029,Random forest with lags,rolling_validation_2018_2022,100424.17583463209,5604.824165367914
+Tejo,2021,713233,Random forest with lags,rolling_validation_2018_2022,635553.6557388889,77679.34426111111
+Távora-Varosa,2021,65378,Random forest with lags,rolling_validation_2018_2022,44030.85132698413,21347.148673015872
+Verdes,2021,893694,Random forest with lags,rolling_validation_2018_2022,802426.2237484128,91267.7762515872
+Alentejo,2022,1133578,Random forest with lags,rolling_validation_2018_2022,1279781.1693166676,146203.1693166676
+Algarve,2022,15842,Random forest with lags,rolling_validation_2018_2022,14640.633082539693,1201.3669174603074
+Açores,2022,4676,Random forest with lags,rolling_validation_2018_2022,9666.627761904758,4990.627761904758
+Bairrada,2022,202082,Random forest with lags,rolling_validation_2018_2022,195556.44652698407,6525.553473015927
+Beira Interior,2022,202018,Random forest with lags,rolling_validation_2018_2022,205223.65698730154,3205.6569873015396
+Douro,2022,1457083,Random forest with lags,rolling_validation_2018_2022,1305064.2825206358,152018.71747936425
+Dão,2022,279213,Random forest with lags,rolling_validation_2018_2022,203432.65869920643,75780.34130079357
+Lisboa,2022,1194362,Random forest with lags,rolling_validation_2018_2022,1304688.641511905,110326.641511905
+Madeira,2022,38390,Random forest with lags,rolling_validation_2018_2022,38731.4070096681,341.40700966810255
+P. Setúbal,2022,500044,Random forest with lags,rolling_validation_2018_2022,497496.533904762,2547.4660952379927
+T. Montes,2022,82646,Random forest with lags,rolling_validation_2018_2022,102254.7288571429,19608.728857142894
+Tejo,2022,686334,Random forest with lags,rolling_validation_2018_2022,702436.7606865071,16102.7606865071
+Távora-Varosa,2022,47869,Random forest with lags,rolling_validation_2018_2022,47526.35297936506,342.6470206349404
+Verdes,2022,1004277,Random forest with lags,rolling_validation_2018_2022,856561.8227821791,147715.1772178209
+Alentejo,2023,1233148,Persistence (previous campaign),test_2023_2025,1133578.0,99570.0
+Alentejo,2024,1134558,Persistence (previous campaign),test_2023_2025,1233148.0,98590.0
+Alentejo,2025,878389,Persistence (previous campaign),test_2023_2025,1134558.0,256169.0
+Algarve,2023,16613,Persistence (previous campaign),test_2023_2025,15842.0,771.0
+Algarve,2024,21156,Persistence (previous campaign),test_2023_2025,16613.0,4543.0
+Algarve,2025,16759,Persistence (previous campaign),test_2023_2025,21156.0,4397.0
+Açores,2023,8007,Persistence (previous campaign),test_2023_2025,4676.0,3331.0
+Açores,2024,3604,Persistence (previous campaign),test_2023_2025,8007.0,4403.0
+Açores,2025,11532,Persistence (previous campaign),test_2023_2025,3604.0,7928.0
+Bairrada,2023,251051,Persistence (previous campaign),test_2023_2025,202082.0,48969.0
+Bairrada,2024,175232,Persistence (previous campaign),test_2023_2025,251051.0,75819.0
+Bairrada,2025,151119,Persistence (previous campaign),test_2023_2025,175232.0,24113.0
+Beira Interior,2023,185805,Persistence (previous campaign),test_2023_2025,202018.0,16213.0
+Beira Interior,2024,224309,Persistence (previous campaign),test_2023_2025,185805.0,38504.0
+Beira Interior,2025,227915,Persistence (previous campaign),test_2023_2025,224309.0,3606.0
+Douro,2023,1561729,Persistence (previous campaign),test_2023_2025,1457083.0,104646.0
+Douro,2024,1634988,Persistence (previous campaign),test_2023_2025,1561729.0,73259.0
+Douro,2025,1118491,Persistence (previous campaign),test_2023_2025,1634988.0,516497.0
+Dão,2023,281210,Persistence (previous campaign),test_2023_2025,279213.0,1997.0
+Dão,2024,214276,Persistence (previous campaign),test_2023_2025,281210.0,66934.0
+Dão,2025,213623,Persistence (previous campaign),test_2023_2025,214276.0,653.0
+Lisboa,2023,1539151,Persistence (previous campaign),test_2023_2025,1194362.0,344789.0
+Lisboa,2024,1211941,Persistence (previous campaign),test_2023_2025,1539151.0,327210.0
+Lisboa,2025,1160831,Persistence (previous campaign),test_2023_2025,1211941.0,51110.0
+Madeira,2023,37800,Persistence (previous campaign),test_2023_2025,38390.0,590.0
+Madeira,2024,30455,Persistence (previous campaign),test_2023_2025,37800.0,7345.0
+Madeira,2025,26977,Persistence (previous campaign),test_2023_2025,30455.0,3478.0
+P. Setúbal,2023,589897,Persistence (previous campaign),test_2023_2025,500044.0,89853.0
+P. Setúbal,2024,454706,Persistence (previous campaign),test_2023_2025,589897.0,135191.0
+P. Setúbal,2025,404147,Persistence (previous campaign),test_2023_2025,454706.0,50559.0
+T. Montes,2023,100835,Persistence (previous campaign),test_2023_2025,82646.0,18189.0
+T. Montes,2024,99457,Persistence (previous campaign),test_2023_2025,100835.0,1378.0
+T. Montes,2025,81501,Persistence (previous campaign),test_2023_2025,99457.0,17956.0
+Tejo,2023,759892,Persistence (previous campaign),test_2023_2025,686334.0,73558.0
+Tejo,2024,650724,Persistence (previous campaign),test_2023_2025,759892.0,109168.0
+Tejo,2025,598630,Persistence (previous campaign),test_2023_2025,650724.0,52094.0
+Távora-Varosa,2023,52440,Persistence (previous campaign),test_2023_2025,47869.0,4571.0
+Távora-Varosa,2024,65441,Persistence (previous campaign),test_2023_2025,52440.0,13001.0
+Távora-Varosa,2025,61525,Persistence (previous campaign),test_2023_2025,65441.0,3916.0
+Verdes,2023,924482,Persistence (previous campaign),test_2023_2025,1004277.0,79795.0
+Verdes,2024,1003287,Persistence (previous campaign),test_2023_2025,924482.0,78805.0
+Verdes,2025,1004727,Persistence (previous campaign),test_2023_2025,1003287.0,1440.0
+Alentejo,2023,1233148,Linear regression with lags,test_2023_2025,1210005.394775522,23142.60522447806
+Alentejo,2024,1134558,Linear regression with lags,test_2023_2025,1172804.0860055198,38246.08600551984
+Alentejo,2025,878389,Linear regression with lags,test_2023_2025,1213272.7306039887,334883.73060398875
+Algarve,2023,16613,Linear regression with lags,test_2023_2025,73962.7746469964,57349.774646996404
+Algarve,2024,21156,Linear regression with lags,test_2023_2025,83184.50005421723,62028.500054217235
+Algarve,2025,16759,Linear regression with lags,test_2023_2025,91963.60305045173,75204.60305045173
+Açores,2023,8007,Linear regression with lags,test_2023_2025,69178.61210280814,61171.61210280814
+Açores,2024,3604,Linear regression with lags,test_2023_2025,77173.15012466005,73569.15012466005
+Açores,2025,11532,Linear regression with lags,test_2023_2025,87864.11776149616,76332.11776149616
+Bairrada,2023,251051,Linear regression with lags,test_2023_2025,239147.6954516082,11903.30454839181
+Bairrada,2024,175232,Linear regression with lags,test_2023_2025,246207.5390964179,70975.5390964179
+Bairrada,2025,151119,Linear regression with lags,test_2023_2025,279472.9973462691,128353.99734626908
+Beira Interior,2023,185805,Linear regression with lags,test_2023_2025,260878.8254279333,75073.8254279333
+Beira Interior,2024,224309,Linear regression with lags,test_2023_2025,260470.0370240202,36161.03702402019
+Beira Interior,2025,227915,Linear regression with lags,test_2023_2025,257261.89140195487,29346.89140195487
+Douro,2023,1561729,Linear regression with lags,test_2023_2025,1524719.1563752228,37009.84362477716
+Douro,2024,1634988,Linear regression with lags,test_2023_2025,1496002.7937636403,138985.20623635966
+Douro,2025,1118491,Linear regression with lags,test_2023_2025,1511935.9773054272,393444.9773054272
+Dão,2023,281210,Linear regression with lags,test_2023_2025,300959.35186099046,19749.351860990457
+Dão,2024,214276,Linear regression with lags,test_2023_2025,309822.28886842396,95546.28886842396
+Dão,2025,213623,Linear regression with lags,test_2023_2025,329518.8282650787,115895.82826507872
+Lisboa,2023,1539151,Linear regression with lags,test_2023_2025,1206958.9183988997,332192.0816011003
+Lisboa,2024,1211941,Linear regression with lags,test_2023_2025,1133376.7305458582,78564.26945414185
+Lisboa,2025,1160831,Linear regression with lags,test_2023_2025,1267409.6452732147,106578.64527321467
+Madeira,2023,37800,Linear regression with lags,test_2023_2025,99811.86288021965,62011.86288021965
+Madeira,2024,30455,Linear regression with lags,test_2023_2025,109420.87147994642,78965.87147994642
+Madeira,2025,26977,Linear regression with lags,test_2023_2025,119759.91396080109,92782.91396080109
+P. Setúbal,2023,589897,Linear regression with lags,test_2023_2025,555478.6108311984,34418.3891688016
+P. Setúbal,2024,454706,Linear regression with lags,test_2023_2025,542970.8110174993,88264.8110174993
+P. Setúbal,2025,404147,Linear regression with lags,test_2023_2025,591931.4934789388,187784.49347893882
+T. Montes,2023,100835,Linear regression with lags,test_2023_2025,138162.84861696453,37327.84861696453
+T. Montes,2024,99457,Linear regression with lags,test_2023_2025,135558.86857705307,36101.86857705307
+T. Montes,2025,81501,Linear regression with lags,test_2023_2025,148323.52691772004,66822.52691772004
+Tejo,2023,759892,Linear regression with lags,test_2023_2025,679502.3346371553,80389.66536284471
+Tejo,2024,650724,Linear regression with lags,test_2023_2025,674392.6294741901,23668.629474190064
+Tejo,2025,598630,Linear regression with lags,test_2023_2025,716311.6721589975,117681.6721589975
+Távora-Varosa,2023,52440,Linear regression with lags,test_2023_2025,85819.73506246565,33379.735062465654
+Távora-Varosa,2024,65441,Linear regression with lags,test_2023_2025,91485.13148662768,26044.13148662768
+Távora-Varosa,2025,61525,Linear regression with lags,test_2023_2025,99112.88168885448,37587.88168885448
+Verdes,2023,924482,Linear regression with lags,test_2023_2025,872817.5509674586,51664.449032541364
+Verdes,2024,1003287,Linear regression with lags,test_2023_2025,922419.0522644266,80867.9477355734
+Verdes,2025,1004727,Linear regression with lags,test_2023_2025,905791.6304429057,98935.3695570943
+Alentejo,2023,1233148,Ridge with lags (alpha=0.1),test_2023_2025,1265469.878524236,32321.878524235915
+Alentejo,2024,1134558,Ridge with lags (alpha=0.1),test_2023_2025,1224870.1086096438,90312.10860964376
+Alentejo,2025,878389,Ridge with lags (alpha=0.1),test_2023_2025,1249520.5813185757,371131.58131857566
+Algarve,2023,16613,Ridge with lags (alpha=0.1),test_2023_2025,63433.084874428285,46820.084874428285
+Algarve,2024,21156,Ridge with lags (alpha=0.1),test_2023_2025,71221.3161664012,50065.3161664012
+Algarve,2025,16759,Ridge with lags (alpha=0.1),test_2023_2025,78919.28370712715,62160.28370712715
+Açores,2023,8007,Ridge with lags (alpha=0.1),test_2023_2025,57364.2508682207,49357.2508682207
+Açores,2024,3604,Ridge with lags (alpha=0.1),test_2023_2025,63129.50065781397,59525.50065781397
+Açores,2025,11532,Ridge with lags (alpha=0.1),test_2023_2025,71819.77724184876,60287.77724184876
+Bairrada,2023,251051,Ridge with lags (alpha=0.1),test_2023_2025,209968.04140498233,41082.95859501767
+Bairrada,2024,175232,Ridge with lags (alpha=0.1),test_2023_2025,227174.14164124633,51942.14164124633
+Bairrada,2025,151119,Ridge with lags (alpha=0.1),test_2023_2025,261000.63638041445,109881.63638041445
+Beira Interior,2023,185805,Ridge with lags (alpha=0.1),test_2023_2025,266332.92511239357,80527.92511239357
+Beira Interior,2024,224309,Ridge with lags (alpha=0.1),test_2023_2025,255025.09759573604,30716.097595736035
+Beira Interior,2025,227915,Ridge with lags (alpha=0.1),test_2023_2025,243943.1590577088,16028.159057708806
+Douro,2023,1561729,Ridge with lags (alpha=0.1),test_2023_2025,1532827.0302661143,28901.969733885722
+Douro,2024,1634988,Ridge with lags (alpha=0.1),test_2023_2025,1530106.3374476463,104881.6625523537
+Douro,2025,1118491,Ridge with lags (alpha=0.1),test_2023_2025,1555324.2873349125,436833.28733491246
+Dão,2023,281210,Ridge with lags (alpha=0.1),test_2023_2025,286531.0875540393,5321.087554039317
+Dão,2024,214276,Ridge with lags (alpha=0.1),test_2023_2025,303196.96442860283,88920.96442860283
+Dão,2025,213623,Ridge with lags (alpha=0.1),test_2023_2025,311194.4780226667,97571.4780226667
+Lisboa,2023,1539151,Ridge with lags (alpha=0.1),test_2023_2025,1290990.288597779,248160.71140222088
+Lisboa,2024,1211941,Ridge with lags (alpha=0.1),test_2023_2025,1244735.5610060163,32794.56100601633
+Lisboa,2025,1160831,Ridge with lags (alpha=0.1),test_2023_2025,1383900.2443526518,223069.24435265176
+Madeira,2023,37800,Ridge with lags (alpha=0.1),test_2023_2025,87517.88169229706,49717.88169229706
+Madeira,2024,30455,Ridge with lags (alpha=0.1),test_2023_2025,95412.46651233337,64957.46651233337
+Madeira,2025,26977,Ridge with lags (alpha=0.1),test_2023_2025,102874.56699551229,75897.56699551229
+P. Setúbal,2023,589897,Ridge with lags (alpha=0.1),test_2023_2025,568681.8998716108,21215.100128389196
+P. Setúbal,2024,454706,Ridge with lags (alpha=0.1),test_2023_2025,566466.5586174335,111760.55861743353
+P. Setúbal,2025,404147,Ridge with lags (alpha=0.1),test_2023_2025,607093.8104412686,202946.8104412686
+T. Montes,2023,100835,Ridge with lags (alpha=0.1),test_2023_2025,128971.86799885076,28136.867998850765
+T. Montes,2024,99457,Ridge with lags (alpha=0.1),test_2023_2025,120675.35848454572,21218.358484545723
+T. Montes,2025,81501,Ridge with lags (alpha=0.1),test_2023_2025,132077.77949166903,50576.77949166903
+Tejo,2023,759892,Ridge with lags (alpha=0.1),test_2023_2025,714161.445699505,45730.55430049496
+Tejo,2024,650724,Ridge with lags (alpha=0.1),test_2023_2025,721031.8383294102,70307.83832941018
+Tejo,2025,598630,Ridge with lags (alpha=0.1),test_2023_2025,757524.595125571,158894.595125571
+Távora-Varosa,2023,52440,Ridge with lags (alpha=0.1),test_2023_2025,80180.71190223855,27740.711902238545
+Távora-Varosa,2024,65441,Ridge with lags (alpha=0.1),test_2023_2025,84622.18222489872,19181.182224898716
+Távora-Varosa,2025,61525,Ridge with lags (alpha=0.1),test_2023_2025,90837.73933827027,29312.739338270272
+Verdes,2023,924482,Ridge with lags (alpha=0.1),test_2023_2025,906166.2075632205,18315.792436779477
+Verdes,2024,1003287,Ridge with lags (alpha=0.1),test_2023_2025,971846.6611196459,31440.338880354073
+Verdes,2025,1004727,Ridge with lags (alpha=0.1),test_2023_2025,962372.5941788527,42354.40582114726
+Alentejo,2023,1233148,Ridge with lags (alpha=1),test_2023_2025,1290172.5180737171,57024.51807371713
+Alentejo,2024,1134558,Ridge with lags (alpha=1),test_2023_2025,1237760.9860166511,103202.98601665115
+Alentejo,2025,878389,Ridge with lags (alpha=1),test_2023_2025,1263258.4001603303,384869.40016033035
+Algarve,2023,16613,Ridge with lags (alpha=1),test_2023_2025,55224.25676663773,38611.25676663773
+Algarve,2024,21156,Ridge with lags (alpha=1),test_2023_2025,61543.1817735472,40387.1817735472
+Algarve,2025,16759,Ridge with lags (alpha=1),test_2023_2025,68578.65762205375,51819.65762205375
+Açores,2023,8007,Ridge with lags (alpha=1),test_2023_2025,47746.468030677,39739.468030677
+Açores,2024,3604,Ridge with lags (alpha=1),test_2023_2025,52184.59674951155,48580.59674951155
+Açores,2025,11532,Ridge with lags (alpha=1),test_2023_2025,59238.520313203975,47706.520313203975
+Bairrada,2023,251051,Ridge with lags (alpha=1),test_2023_2025,197618.61739076598,53432.38260923402
+Bairrada,2024,175232,Ridge with lags (alpha=1),test_2023_2025,223963.6427279673,48731.64272796729
+Bairrada,2025,151119,Ridge with lags (alpha=1),test_2023_2025,251219.1410593149,100100.14105931489
+Beira Interior,2023,185805,Ridge with lags (alpha=1),test_2023_2025,269389.6751462301,83584.67514623009
+Beira Interior,2024,224309,Ridge with lags (alpha=1),test_2023_2025,244414.38282635727,20105.382826357265
+Beira Interior,2025,227915,Ridge with lags (alpha=1),test_2023_2025,236602.85295355238,8687.852953552385
+Douro,2023,1561729,Ridge with lags (alpha=1),test_2023_2025,1559658.0595687379,2070.9404312621336
+Douro,2024,1634988,Ridge with lags (alpha=1),test_2023_2025,1541090.3148894415,93897.68511055852
+Douro,2025,1118491,Ridge with lags (alpha=1),test_2023_2025,1594996.2207630032,476505.2207630032
+Dão,2023,281210,Ridge with lags (alpha=1),test_2023_2025,289399.7862739087,8189.786273908685
+Dão,2024,214276,Ridge with lags (alpha=1),test_2023_2025,300494.488888463,86218.488888463
+Dão,2025,213623,Ridge with lags (alpha=1),test_2023_2025,297046.81645289494,83423.81645289494
+Lisboa,2023,1539151,Ridge with lags (alpha=1),test_2023_2025,1329128.7538613232,210022.24613867677
+Lisboa,2024,1211941,Ridge with lags (alpha=1),test_2023_2025,1312040.4508202763,100099.45082027628
+Lisboa,2025,1160831,Ridge with lags (alpha=1),test_2023_2025,1452533.2915797397,291702.29157973966
+Madeira,2023,37800,Ridge with lags (alpha=1),test_2023_2025,77844.88837659656,40044.88837659656
+Madeira,2024,30455,Ridge with lags (alpha=1),test_2023_2025,84280.44018351601,53825.44018351601
+Madeira,2025,26977,Ridge with lags (alpha=1),test_2023_2025,89020.86432213831,62043.86432213831
+P. Setúbal,2023,589897,Ridge with lags (alpha=1),test_2023_2025,574154.4889241734,15742.511075826595
+P. Setúbal,2024,454706,Ridge with lags (alpha=1),test_2023_2025,575864.684027827,121158.684027827
+P. Setúbal,2025,404147,Ridge with lags (alpha=1),test_2023_2025,608169.3333071179,204022.33330711792
+T. Montes,2023,100835,Ridge with lags (alpha=1),test_2023_2025,123519.16501019214,22684.16501019214
+T. Montes,2024,99457,Ridge with lags (alpha=1),test_2023_2025,110933.89361857215,11476.893618572154
+T. Montes,2025,81501,Ridge with lags (alpha=1),test_2023_2025,123805.15011548722,42304.150115487224
+Tejo,2023,759892,Ridge with lags (alpha=1),test_2023_2025,733941.0587406588,25950.941259341198
+Tejo,2024,650724,Ridge with lags (alpha=1),test_2023_2025,745445.1990951784,94721.1990951784
+Tejo,2025,598630,Ridge with lags (alpha=1),test_2023_2025,774751.7931545498,176121.79315454978
+Távora-Varosa,2023,52440,Ridge with lags (alpha=1),test_2023_2025,78672.14016237058,26232.140162370575
+Távora-Varosa,2024,65441,Ridge with lags (alpha=1),test_2023_2025,79171.97157337499,13730.97157337499
+Távora-Varosa,2025,61525,Ridge with lags (alpha=1),test_2023_2025,86971.2743572811,25446.2743572811
+Verdes,2023,924482,Ridge with lags (alpha=1),test_2023_2025,935762.6367846095,11280.636784609524
+Verdes,2024,1003287,Ridge with lags (alpha=1),test_2023_2025,1002915.6193854059,371.38061459409073
+Verdes,2025,1004727,Ridge with lags (alpha=1),test_2023_2025,990191.2482708427,14535.751729157288
+Alentejo,2023,1233148,Ridge with lags (alpha=10),test_2023_2025,1264197.3331053585,31049.333105358528
+Alentejo,2024,1134558,Ridge with lags (alpha=10),test_2023_2025,1209482.5212500202,74924.52125002025
+Alentejo,2025,878389,Ridge with lags (alpha=10),test_2023_2025,1234542.1282605948,356153.1282605948
+Algarve,2023,16613,Ridge with lags (alpha=10),test_2023_2025,48984.866688667506,32371.866688667506
+Algarve,2024,21156,Ridge with lags (alpha=10),test_2023_2025,53741.29001757415,32585.290017574152
+Algarve,2025,16759,Ridge with lags (alpha=10),test_2023_2025,59646.955885646166,42887.955885646166
+Açores,2023,8007,Ridge with lags (alpha=10),test_2023_2025,41427.18953693373,33420.18953693373
+Açores,2024,3604,Ridge with lags (alpha=10),test_2023_2025,44446.47067624598,40842.47067624598
+Açores,2025,11532,Ridge with lags (alpha=10),test_2023_2025,49920.32725676434,38388.32725676434
+Bairrada,2023,251051,Ridge with lags (alpha=10),test_2023_2025,209057.32532826965,41993.67467173035
+Bairrada,2024,175232,Ridge with lags (alpha=10),test_2023_2025,236802.05010009,61570.05010009001
+Bairrada,2025,151119,Ridge with lags (alpha=10),test_2023_2025,257165.48138272297,106046.48138272297
+Beira Interior,2023,185805,Ridge with lags (alpha=10),test_2023_2025,275472.46753856813,89667.46753856813
+Beira Interior,2024,224309,Ridge with lags (alpha=10),test_2023_2025,245776.0911695038,21467.09116950381
+Beira Interior,2025,227915,Ridge with lags (alpha=10),test_2023_2025,241318.5449071179,13403.544907117903
+Douro,2023,1561729,Ridge with lags (alpha=10),test_2023_2025,1567444.9121875742,5715.9121875741985
+Douro,2024,1634988,Ridge with lags (alpha=10),test_2023_2025,1537004.4217433394,97983.5782566606
+Douro,2025,1118491,Ridge with lags (alpha=10),test_2023_2025,1601844.5499229517,483353.54992295173
+Dão,2023,281210,Ridge with lags (alpha=10),test_2023_2025,304041.14915964997,22831.14915964997
+Dão,2024,214276,Ridge with lags (alpha=10),test_2023_2025,306890.8690147092,92614.8690147092
+Dão,2025,213623,Ridge with lags (alpha=10),test_2023_2025,298244.7067987707,84621.7067987707
+Lisboa,2023,1539151,Ridge with lags (alpha=10),test_2023_2025,1296508.1825303186,242642.81746968138
+Lisboa,2024,1211941,Ridge with lags (alpha=10),test_2023_2025,1294858.6831981146,82917.68319811462
+Lisboa,2025,1160831,Ridge with lags (alpha=10),test_2023_2025,1422053.5461051816,261222.54610518157
+Madeira,2023,37800,Ridge with lags (alpha=10),test_2023_2025,69694.50712718972,31894.507127189718
+Madeira,2024,30455,Ridge with lags (alpha=10),test_2023_2025,74684.33762708312,44229.33762708312
+Madeira,2025,26977,Ridge with lags (alpha=10),test_2023_2025,77532.1675852791,50555.167585279094
+P. Setúbal,2023,589897,Ridge with lags (alpha=10),test_2023_2025,554475.9061512658,35421.09384873416
+P. Setúbal,2024,454706,Ridge with lags (alpha=10),test_2023_2025,556833.3836933718,102127.38369337178
+P. Setúbal,2025,404147,Ridge with lags (alpha=10),test_2023_2025,581963.771542456,177816.771542456
+T. Montes,2023,100835,Ridge with lags (alpha=10),test_2023_2025,130342.05937657796,29507.059376577963
+T. Montes,2024,99457,Ridge with lags (alpha=10),test_2023_2025,112838.94528731698,13381.94528731698
+T. Montes,2025,81501,Ridge with lags (alpha=10),test_2023_2025,125363.24680782965,43862.24680782965
+Tejo,2023,759892,Ridge with lags (alpha=10),test_2023_2025,718070.1837768016,41821.81622319843
+Tejo,2024,650724,Ridge with lags (alpha=10),test_2023_2025,729599.4023874537,78875.40238745371
+Tejo,2025,598630,Ridge with lags (alpha=10),test_2023_2025,752150.6115159646,153520.6115159646
+Távora-Varosa,2023,52440,Ridge with lags (alpha=10),test_2023_2025,82582.4997543554,30142.499754355405
+Távora-Varosa,2024,65441,Ridge with lags (alpha=10),test_2023_2025,80578.32162720262,15137.321627202618
+Távora-Varosa,2025,61525,Ridge with lags (alpha=10),test_2023_2025,88588.51851471578,27063.518514715775
+Verdes,2023,924482,Ridge with lags (alpha=10),test_2023_2025,934778.9715901242,10296.971590124187
+Verdes,2024,1003287,Ridge with lags (alpha=10),test_2023_2025,994253.626603524,9033.373396476032
+Verdes,2025,1004727,Ridge with lags (alpha=10),test_2023_2025,979620.4858933832,25106.514106616843
+Alentejo,2023,1233148,Random forest with lags,test_2023_2025,1232400.1527504337,747.8472495663445
+Alentejo,2024,1134558,Random forest with lags,test_2023_2025,1161070.2188960314,26512.21889603138
+Alentejo,2025,878389,Random forest with lags,test_2023_2025,1122543.3315250368,244154.33152503683
+Algarve,2023,16613,Random forest with lags,test_2023_2025,14578.839583333329,2034.1604166666712
+Algarve,2024,21156,Random forest with lags,test_2023_2025,14544.693916666662,6611.306083333338
+Algarve,2025,16759,Random forest with lags,test_2023_2025,14760.0080547619,1998.9919452381
+Açores,2023,8007,Random forest with lags,test_2023_2025,9655.227596031742,1648.227596031742
+Açores,2024,3604,Random forest with lags,test_2023_2025,12087.98896666666,8483.98896666666
+Açores,2025,11532,Random forest with lags,test_2023_2025,10553.655365079368,978.3446349206315
+Bairrada,2023,251051,Random forest with lags,test_2023_2025,197596.2744261904,53454.725573809614
+Bairrada,2024,175232,Random forest with lags,test_2023_2025,204642.8517587302,29410.85175873019
+Bairrada,2025,151119,Random forest with lags,test_2023_2025,219292.4398857144,68173.43988571441
+Beira Interior,2023,185805,Random forest with lags,test_2023_2025,238685.3497452381,52880.34974523811
+Beira Interior,2024,224309,Random forest with lags,test_2023_2025,223018.82054603178,1290.179453968216
+Beira Interior,2025,227915,Random forest with lags,test_2023_2025,214849.11331587296,13065.886684127036
+Douro,2023,1561729,Random forest with lags,test_2023_2025,1538434.6139230162,23294.386076983763
+Douro,2024,1634988,Random forest with lags,test_2023_2025,1412542.0848023812,222445.91519761877
+Douro,2025,1118491,Random forest with lags,test_2023_2025,1426403.3115404763,307912.3115404763
+Dão,2023,281210,Random forest with lags,test_2023_2025,255225.27738492057,25984.72261507943
+Dão,2024,214276,Random forest with lags,test_2023_2025,260069.5976444443,45793.59764444429
+Dão,2025,213623,Random forest with lags,test_2023_2025,264439.4227801587,50816.4227801587
+Lisboa,2023,1539151,Random forest with lags,test_2023_2025,1298604.4397044012,240546.5602955988
+Lisboa,2024,1211941,Random forest with lags,test_2023_2025,1274264.2069698412,62323.20696984115
+Lisboa,2025,1160831,Random forest with lags,test_2023_2025,1360731.6147131312,199900.61471313122
+Madeira,2023,37800,Random forest with lags,test_2023_2025,38653.194176984136,853.194176984136
+Madeira,2024,30455,Random forest with lags,test_2023_2025,38719.48576984128,8264.485769841282
+Madeira,2025,26977,Random forest with lags,test_2023_2025,39052.07702222223,12075.077022222227
+P. Setúbal,2023,589897,Random forest with lags,test_2023_2025,546048.075453968,43848.92454603198
+P. Setúbal,2024,454706,Random forest with lags,test_2023_2025,500332.531313492,45626.531313491985
+P. Setúbal,2025,404147,Random forest with lags,test_2023_2025,583550.424915873,179403.42491587298
+T. Montes,2023,100835,Random forest with lags,test_2023_2025,94624.69631111107,6210.303688888933
+T. Montes,2024,99457,Random forest with lags,test_2023_2025,94080.84521190471,5376.154788095286
+T. Montes,2025,81501,Random forest with lags,test_2023_2025,96957.96640873012,15456.96640873012
+Tejo,2023,759892,Random forest with lags,test_2023_2025,733098.100552381,26793.899447618984
+Tejo,2024,650724,Random forest with lags,test_2023_2025,728465.4113174599,77741.41131745989
+Tejo,2025,598630,Random forest with lags,test_2023_2025,821735.7379769844,223105.73797698435
+Távora-Varosa,2023,52440,Random forest with lags,test_2023_2025,50453.8026761905,1986.1973238095015
+Távora-Varosa,2024,65441,Random forest with lags,test_2023_2025,46232.55339206348,19208.446607936523
+Távora-Varosa,2025,61525,Random forest with lags,test_2023_2025,51364.92546825397,10160.074531746031
+Verdes,2023,924482,Random forest with lags,test_2023_2025,948307.9740746754,23825.974074675352
+Verdes,2024,1003287,Random forest with lags,test_2023_2025,1043768.2645889613,40481.26458896126
+Verdes,2025,1004727,Random forest with lags,test_2023_2025,1052933.38428658,48206.38428657991

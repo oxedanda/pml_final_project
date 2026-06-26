@@ -29,6 +29,17 @@ def number(value: float | int, decimals: int = 0) -> str:
 def format_forecast_table(data: pd.DataFrame) -> pd.DataFrame:
     """Return a human-readable forecast table for display in Gradio."""
     view = data.copy()
+    display_columns = [
+        "region",
+        "year_start",
+        "vineyard_area_ha",
+        "selected_model",
+        "predicted_production_hl",
+        "lower_90_hl",
+        "upper_90_hl",
+    ]
+    view = view[[column for column in display_columns if column in view.columns]]
+
     numeric_columns = [
         "vineyard_area_ha",
         "predicted_production_hl",
