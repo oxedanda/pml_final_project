@@ -45,7 +45,8 @@ notebooks/03_forecast_simulator.ipynb
 outputs/figures/          Generated figures
 outputs/tables/           Metrics and test predictions
 project_proposal/         Submitted proposal
-report/final_report.md    Final self-contained report
+report/pml_wine_production_report.pdf
+                          Final complete project report
 src/evaluate_models.py    Reproducible temporal evaluation
 src/app.py                Optional interactive Gradio forecast app
 requirements.txt          Python dependencies
