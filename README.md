@@ -95,6 +95,25 @@ predicted 2026/27 production by region. Vineyard area is treated only as a
 scenario input, and the 90% band is an empirical validation-error band rather
 than a formal confidence interval.
 
+## Hugging Face / Gradio Space
+
+An interactive deployment of the experimental forecast workflow is available on
+Hugging Face Spaces, built with Gradio and using the same methodology as
+`src/future_forecast.py` and the consolidated simulator notebook.
+
+The app allows users to explore the 2026/27 production forecast for each
+viticultural region, with the option to adjust vineyard area as a scenario
+input. It loads the same processed datasets and uses the selected lagged random
+forest model to generate predictions. The displayed uncertainty band
+corresponds to empirical validation errors, not formal confidence intervals,
+and follows the same lower-bound safeguard described in the report and
+notebooks.
+
+The app is intended for demonstration and exploratory use only, not as a formal
+decision-support tool.
+
+🔗 **Live app:** [https://huggingface.co/spaces/oxedanda/wine-production-predictor](https://huggingface.co/spaces/oxedanda/wine-production-predictor)
+
 ## Data sources
 
 - [IVV wine production statistics](https://www.ivv.gov.pt/np4/163.html)
