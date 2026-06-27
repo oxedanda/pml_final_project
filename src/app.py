@@ -1,3 +1,8 @@
+# prompt: Build a Gradio app to forecast Portuguese wine production for 2026/27 using
+# local CSV data, lagged features, rolling temporal validation, a persistence
+# baseline, and a 90% empirical uncertainty interval, with logic in
+# `future_forecast.py` and a burgundy wine-themed UI in `app.py`
+
 """Interactive Gradio app for the experimental wine-production forecast.
 
 Run from the repository root with:
@@ -10,45 +15,24 @@ area changes.
 
 from __future__ import annotations
 
-import pandas as pd
 import gradio as gr
+import pandas as pd
 
-try:
-    from future_forecast import evaluate_forecasters, forecast_2026, load_history
-except ModuleNotFoundError:
-    from src.future_forecast import evaluate_forecasters, forecast_2026, load_history
+from future_forecast import evaluate_forecasters, forecast_2026, load_history
 
 
-def number(value: float | int, decimals: int = 0) -> str:
-    """Format numbers for cards and tables."""
-    if pd.isna(value):
-        return ""
-    return f"{value:,.{decimals}f}"
+def format_forecast_table(df: pd.DataFrame) -> pd.DataFrame:
+    view = df.copy()
 
-
-def format_forecast_table(data: pd.DataFrame) -> pd.DataFrame:
-    """Return a human-readable forecast table for display in Gradio."""
-    view = data.copy()
-    display_columns = [
-        "region",
-        "year_start",
-        "vineyard_area_ha",
-        "selected_model",
-        "predicted_production_hl",
-        "lower_90_hl",
-        "upper_90_hl",
-    ]
-    view = view[[column for column in display_columns if column in view.columns]]
-
-    numeric_columns = [
+    numeric_cols = [
         "vineyard_area_ha",
         "predicted_production_hl",
         "lower_90_hl",
         "upper_90_hl",
     ]
-    for column in numeric_columns:
-        if column in view.columns:
-            view[column] = view[column].map(lambda value: number(value))
+    for col in numeric_cols:
+        if col in view.columns:
+            view[col] = view[col].map(lambda x: f"{x:,.0f}" if pd.notna(x) else "")
 
     return view.rename(
         columns={
@@ -57,24 +41,8 @@ def format_forecast_table(data: pd.DataFrame) -> pd.DataFrame:
             "vineyard_area_ha": "Area (ha)",
             "selected_model": "Selected model",
             "predicted_production_hl": "Predicted production (hl)",
-            "lower_90_hl": "Lower empirical 90% (hl)",
-            "upper_90_hl": "Upper empirical 90% (hl)",
-        }
-    )
-
-
-def format_metrics_table(data: pd.DataFrame) -> pd.DataFrame:
-    """Round and rename metric columns for a cleaner dashboard table."""
-    view = data[["model", "MAE", "RMSE", "R2"]].copy()
-    view["MAE"] = view["MAE"].map(lambda value: number(value))
-    view["RMSE"] = view["RMSE"].map(lambda value: number(value))
-    view["R2"] = view["R2"].map(lambda value: f"{value:.3f}")
-    return view.rename(
-        columns={
-            "model": "Model",
-            "MAE": "MAE (hl)",
-            "RMSE": "RMSE (hl)",
-            "R2": "R²",
+            "lower_90_hl": "Lower 90% (hl)",
+            "upper_90_hl": "Upper 90% (hl)",
         }
     )
 
@@ -91,27 +59,31 @@ latest_area = (
 
 region_choices = sorted(base_forecast["region"].astype(str).unique().tolist())
 default_region = region_choices[0]
-area_map = dict(zip(latest_area["region"].astype(str), latest_area["vineyard_area_ha"]))
+
+area_map = dict(
+    zip(latest_area["region"].astype(str), latest_area["vineyard_area_ha"])
+)
 
 validation_metrics = (
-    evaluation.metrics.query("split == 'rolling_validation_2018_2022'")
+    evaluation.metrics
+    .query("split == 'rolling_validation_2018_2022'")
     .sort_values("MAE")
     .reset_index(drop=True)
 )
+
 test_metrics = (
-    evaluation.metrics.query("split == 'test_2023_2025'")
+    evaluation.metrics
+    .query("split == 'test_2023_2025'")
     .sort_values("MAE")
     .reset_index(drop=True)
 )
 
 
 def update_area(region: str):
-    """Reset the area input to the latest observed area for the chosen region."""
     return gr.update(value=round(float(area_map.get(region, 0.0)), 2))
 
 
 def simulate(region: str, area_ha: float):
-    """Forecast one region under the selected vineyard-area scenario."""
     if not region:
         raise gr.Error("Please choose a region.")
     if area_ha is None or area_ha <= 0:
@@ -121,246 +93,190 @@ def simulate(region: str, area_ha: float):
         evaluation=evaluation,
         area_overrides={region: float(area_ha)},
     )
+
     selected = result[result["region"] == region].copy().reset_index(drop=True)
+
     if selected.empty:
         raise gr.Error(f"No forecast returned for region: {region}")
 
     row = selected.iloc[0]
+
     summary = f"""
-<div class="forecast-card">
-    <div class="forecast-eyebrow">2026/27 forecast</div>
-    <div class="forecast-title">{row['region']}</div>
-    <div class="forecast-grid">
-        <div class="big-stat">
-            <span>Predicted production</span>
-            <strong>{number(row['predicted_production_hl'])} hl</strong>
-        </div>
-        <div class="big-stat">
-            <span>Empirical 90% interval</span>
-            <strong>{number(row['lower_90_hl'])} – {number(row['upper_90_hl'])} hl</strong>
-        </div>
-        <div class="big-stat">
-            <span>Vineyard-area scenario</span>
-            <strong>{number(row['vineyard_area_ha'], 2)} ha</strong>
-        </div>
-        <div class="big-stat">
-            <span>Selected model</span>
-            <strong>{row['selected_model']}</strong>
-        </div>
+<div class="summary-card">
+    <div class="summary-title">🍷 Forecast summary</div>
+    <div class="summary-grid">
+        <div><span>Region</span><strong>{row['region']}</strong></div>
+        <div><span>Campaign</span><strong>2026/27</strong></div>
+        <div><span>Selected model</span><strong>{row['selected_model']}</strong></div>
+        <div><span>Vineyard area</span><strong>{row['vineyard_area_ha']:,.2f} ha</strong></div>
+        <div><span>Predicted production</span><strong>{row['predicted_production_hl']:,.0f} hl</strong></div>
+        <div><span>90% interval</span><strong>{row['lower_90_hl']:,.0f} to {row['upper_90_hl']:,.0f} hl</strong></div>
     </div>
-    <p class="card-note">
-        Scenario output only: changing vineyard area does not prove causality.
-    </p>
 </div>
 """
+
     return summary, format_forecast_table(selected)
 
 
 custom_css = """
-:root {
-    --wine: #6f1232;
-    --wine-dark: #3d071a;
-    --rose: #fff4f6;
-    --rose-2: #fbe7eb;
-    --gold: #c29348;
-    --ink: #24151a;
-    --muted: #76676b;
-}
-
-body, .gradio-container {
-    background: #fbf5f1 !important;
-}
-
 .gradio-container {
-    max-width: 1280px !important;
-    margin: 0 auto !important;
-    padding: 22px 34px !important;
+    max-width: 1120px !important;
     background:
-        radial-gradient(circle at 10% 0%, rgba(194, 147, 72, 0.18), transparent 26%),
-        radial-gradient(circle at 95% 8%, rgba(111, 18, 50, 0.16), transparent 24%),
-        linear-gradient(180deg, #fffafa 0%, #fbf5f1 100%) !important;
+        radial-gradient(circle at top left, rgba(122, 24, 52, 0.14), transparent 28%),
+        radial-gradient(circle at top right, rgba(177, 137, 74, 0.10), transparent 22%),
+        linear-gradient(180deg, #fcf8f5 0%, #f7f1ec 100%);
 }
-
-.hero {
-    border-radius: 28px;
-    padding: 34px 38px;
-    margin: 8px 0 22px;
-    color: white;
+.dark .gradio-container {
     background:
-        linear-gradient(135deg, rgba(61, 7, 26, 0.98), rgba(111, 18, 50, 0.94)),
-        radial-gradient(circle at 85% 20%, rgba(194, 147, 72, 0.45), transparent 28%);
-    box-shadow: 0 22px 55px rgba(61, 7, 26, 0.22);
+        radial-gradient(circle at top left, rgba(122, 24, 52, 0.22), transparent 28%),
+        radial-gradient(circle at top right, rgba(177, 137, 74, 0.10), transparent 22%),
+        linear-gradient(180deg, #1a1115 0%, #140d10 100%);
 }
-
-.hero-kicker {
-    display: inline-block;
-    padding: 6px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.28);
-    border-radius: 999px;
-    color: #ffe6b8;
-    font-size: 0.84rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+#hero {
+    text-align: center;
+    padding: 22px 0 8px 0;
 }
-
-.hero h1 {
-    margin: 14px 0 8px;
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    line-height: 1.02;
+#hero h1 {
+    margin-bottom: 0.35rem;
+    font-size: 2.3rem;
+    color: #6f1232;
+    letter-spacing: -0.02em;
 }
-
-.hero p {
-    max-width: 780px;
-    color: rgba(255, 255, 255, 0.86);
-    font-size: 1.04rem;
+#hero p {
+    margin: 0;
+    color: #6e5a57;
+    font-size: 1rem;
 }
-
+.dark #hero h1 {
+    color: #f0d9df;
+}
+.dark #hero p {
+    color: #c8b6b2;
+}
 .metric-row {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 14px;
-    margin: 0 0 20px;
+    margin: 8px 0 18px 0;
 }
-
 .metric-card {
-    border: 1px solid rgba(111, 18, 50, 0.10);
     border-radius: 20px;
-    padding: 18px 20px;
-    background: rgba(255, 255, 255, 0.78);
-    box-shadow: 0 12px 34px rgba(61, 7, 26, 0.08);
-}
-
-.metric-card span {
-    display: block;
-    color: var(--muted);
-    font-size: 0.83rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-
-.metric-card strong {
-    display: block;
-    margin-top: 6px;
-    color: var(--wine-dark);
-    font-size: 1.25rem;
-}
-
-.interpretation {
-    border-left: 5px solid var(--gold);
-    border-radius: 18px;
     padding: 16px 18px;
-    margin-bottom: 22px;
-    background: rgba(255, 250, 239, 0.86);
-    color: var(--ink);
+    background: linear-gradient(180deg, #fff7f8 0%, #fffaf5 100%);
+    border: 1px solid #ead5db;
+    box-shadow: 0 8px 24px rgba(111, 18, 50, 0.08);
 }
-
-.panel-card {
-    border: 1px solid rgba(111, 18, 50, 0.11) !important;
-    border-radius: 24px !important;
-    padding: 18px !important;
-    background: rgba(255, 255, 255, 0.84) !important;
-    box-shadow: 0 16px 38px rgba(61, 7, 26, 0.07) !important;
+.dark .metric-card {
+    background: linear-gradient(180deg, #2a161d 0%, #231317 100%);
+    border: 1px solid #55303b;
+    box-shadow: none;
 }
-
-.section-title {
-    color: var(--wine-dark);
+.metric-card .label {
+    display: block;
+    font-size: 0.92rem;
+    color: #7a5461;
     margin-bottom: 6px;
 }
-
-.forecast-card {
-    border: 1px solid rgba(111, 18, 50, 0.14);
-    border-radius: 26px;
-    padding: 26px;
-    background:
-        linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 244, 246, 0.98));
-    box-shadow: 0 18px 46px rgba(61, 7, 26, 0.12);
-}
-
-.forecast-eyebrow {
-    color: var(--gold);
+.metric-card .value {
+    display: block;
+    font-size: 1.1rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 0.78rem;
+    color: #6f1232;
 }
-
-.forecast-title {
-    margin-top: 4px;
-    color: var(--wine-dark);
-    font-size: 2rem;
-    font-weight: 800;
+.dark .metric-card .label {
+    color: #d7b5bf;
 }
-
-.forecast-grid {
+.dark .metric-card .value {
+    color: #f7e3e8;
+}
+.main-card {
+    border-radius: 24px;
+    padding: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.88) 0%, rgba(255,250,246,0.95) 100%);
+    border: 1px solid #e8d9d0;
+    box-shadow: 0 12px 32px rgba(94, 36, 49, 0.08);
+    margin-bottom: 18px;
+}
+.dark .main-card {
+    background: linear-gradient(180deg, rgba(36,20,25,0.94) 0%, rgba(28,16,20,0.98) 100%);
+    border: 1px solid #4c3138;
+    box-shadow: none;
+}
+.section-title {
+    color: #6f1232;
+    margin-bottom: 6px;
+}
+.dark .section-title {
+    color: #f2dbe2;
+}
+.summary-card {
+    border-radius: 20px;
+    padding: 18px;
+    background: linear-gradient(180deg, #7a1834 0%, #5e1028 100%);
+    color: #fff7f2;
+    border: 1px solid #8b2c4a;
+    box-shadow: 0 12px 28px rgba(94, 16, 40, 0.24);
+}
+.summary-title {
+    font-size: 1.08rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.summary-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 14px;
-    margin-top: 20px;
 }
-
-.big-stat {
-    border-radius: 18px;
-    padding: 15px 16px;
-    background: white;
-    border: 1px solid rgba(111, 18, 50, 0.08);
+.summary-grid div {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 12px 14px;
 }
-
-.big-stat span {
+.summary-grid span {
     display: block;
-    color: var(--muted);
-    font-size: 0.82rem;
+    font-size: 0.85rem;
+    color: #f3d9c9;
+    margin-bottom: 4px;
 }
-
-.big-stat strong {
+.summary-grid strong {
     display: block;
-    margin-top: 4px;
-    color: var(--wine);
-    font-size: 1.12rem;
+    font-size: 1rem;
+    color: #fffaf6;
 }
-
-.card-note {
-    margin: 18px 0 0;
-    color: var(--muted);
-    font-size: 0.92rem;
-}
-
 button.primary {
-    background: linear-gradient(135deg, var(--wine), #e64267) !important;
-    border: none !important;
-    box-shadow: 0 12px 24px rgba(111, 18, 50, 0.24) !important;
+    background: linear-gradient(180deg, #7a1834 0%, #5e1028 100%) !important;
+    border: 1px solid #8d3250 !important;
 }
-
-@media (max-width: 850px) {
+button.primary:hover {
+    filter: brightness(1.05);
+}
+@media (max-width: 768px) {
     .metric-row,
-    .forecast-grid {
+    .summary-grid {
         grid-template-columns: 1fr;
+    }
+    #hero h1 {
+        font-size: 1.8rem;
     }
 }
 """
 
-theme = gr.themes.Soft(primary_hue="rose", secondary_hue="orange", neutral_hue="stone")
+theme = gr.themes.Soft(
+    primary_hue="rose",
+    secondary_hue="orange",
+    neutral_hue="stone",
+)
 
 with gr.Blocks(
-    title="Wine Production Dashboard",
-    theme=theme,
-    css=custom_css,
+    title="🍷 Wine Production Predictor",
 ) as demo:
     gr.HTML(
         """
-        <section class="hero">
-            <span class="hero-kicker">Professional dashboard ? 2026/27 forecast</span>
-            <h1>Wine Production Dashboard</h1>
-            <p>
-                Forecast 2026/27 wine production for Portuguese viticultural
-                regions using lagged production, vineyard-area scenarios, and
-                rolling-origin model validation.
-            </p>
-            <div style="margin-top: 22px; display:flex; gap:12px; flex-wrap:wrap;">
-                <span style="background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px;">?? IVV official data</span>
-                <span style="background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px;">?? One-step-ahead model</span>
-                <span style="background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.22); padding:8px 12px; border-radius:999px;">?? Scenario simulator</span>
-            </div>
-        </section>
+        <div id="hero">
+            <h1>🍷 Wine Production Predictor</h1>
+            <p>Experimental 2026/27 forecast by Portuguese viticultural region</p>
+        </div>
         """
     )
 
@@ -368,35 +284,21 @@ with gr.Blocks(
         f"""
         <div class="metric-row">
             <div class="metric-card">
-                <span>Selected model</span>
-                <strong>{evaluation.selected_model}</strong>
+                <span class="label">🏆 Selected model</span>
+                <span class="value">{evaluation.selected_model}</span>
             </div>
             <div class="metric-card">
-                <span>Empirical interval</span>
-                <strong>± {number(evaluation.interval_half_width)} hl</strong>
-            </div>
-            <div class="metric-card">
-                <span>Regions covered</span>
-                <strong>{len(region_choices)}</strong>
+                <span class="label">📏 Empirical 90% interval half-width</span>
+                <span class="value">{evaluation.interval_half_width:,.0f} hl</span>
             </div>
         </div>
         """
     )
 
-    gr.HTML(
-        """
-        <div class="interpretation">
-            <b>Important interpretation.</b> The vineyard-area input creates a
-            scenario, not a causal estimate. The 90% interval is empirical,
-            based on validation errors, and should not be read as a formal
-            statistical confidence interval.
-        </div>
-        """
-    )
-
+    gr.HTML('<div class="main-card">')
     with gr.Row():
-        with gr.Column(scale=1, elem_classes=["panel-card"]):
-            gr.Markdown("### Simulation inputs", elem_classes=["section-title"])
+        with gr.Column(scale=1):
+            gr.Markdown("### 🍇 Simulation inputs", elem_classes=["section-title"])
             region = gr.Dropdown(
                 choices=region_choices,
                 value=default_region,
@@ -407,50 +309,43 @@ with gr.Blocks(
                 value=round(float(area_map.get(default_region, 0.0)), 2),
                 label="Vineyard area (ha)",
                 precision=2,
-                info=(
-                    "Adjust vineyard area as a scenario input; this is not a "
-                    "causal effect estimate."
-                ),
+                info="Adjust the vineyard area to simulate a different scenario.",
             )
-            run_button = gr.Button("Forecast 2026/27", variant="primary")
+            run_button = gr.Button("🍷 Forecast 2026/27", variant="primary")
 
-        with gr.Column(scale=2, elem_classes=["panel-card"]):
-            gr.Markdown("### Prediction result", elem_classes=["section-title"])
+        with gr.Column(scale=2):
+            gr.Markdown("### 📋 Prediction result", elem_classes=["section-title"])
             summary = gr.HTML()
             result_table = gr.Dataframe(
                 label="Forecast result",
                 interactive=False,
-                wrap=True,
             )
+    gr.HTML("</div>")
 
-    with gr.Accordion("Validation metrics", open=False):
+    with gr.Accordion("📊 Validation metrics", open=False):
         gr.Dataframe(
-            value=format_metrics_table(validation_metrics),
-            label="Rolling validation 2018-2022",
+            value=validation_metrics[["model", "MAE", "RMSE", "R2"]],
+            label="Rolling validation 2018–2022",
             interactive=False,
-            wrap=True,
         )
 
-    with gr.Accordion("Final one-step-ahead test metrics", open=False):
+    with gr.Accordion("🧪 Final test metrics", open=False):
         gr.Dataframe(
-            value=format_metrics_table(test_metrics),
-            label="Test years 2023-2025",
+            value=test_metrics[["model", "MAE", "RMSE", "R2"]],
+            label="Final one-step-ahead test 2023–2025",
             interactive=False,
-            wrap=True,
         )
 
-    with gr.Accordion("Forecast table for all regions", open=False):
+    with gr.Accordion("🗂️ Baseline forecast table", open=False):
         gr.Dataframe(
             value=format_forecast_table(base_forecast),
-            label="Default 2026/27 forecasts for all regions",
+            label="Forecasts for all regions",
             interactive=False,
-            wrap=True,
         )
 
     region.change(fn=update_area, inputs=region, outputs=area)
     run_button.click(fn=simulate, inputs=[region, area], outputs=[summary, result_table])
     demo.load(fn=simulate, inputs=[region, area], outputs=[summary, result_table])
 
-
 if __name__ == "__main__":
-    demo.launch()
+    demo.launch(theme=theme, css=custom_css)
